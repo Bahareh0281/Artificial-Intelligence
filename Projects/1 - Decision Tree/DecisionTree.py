@@ -164,15 +164,15 @@ def print_tree(node, indent=''):
 
 
 def predict(node, instance):
-    print("Node attribute is: ")
-    print(node.attribute)
-    print("Instance is: ")
-    print(instance)
+    # print("Node attribute is: ")
+    # print(node.attribute)
+    # print("Instance is: ")
+    # print(instance)
     if node.label is not None:
         return node.label
     attribute_value = instance[attributes.index(node.attribute)]
-    print("Attribute value is: ")
-    print(attribute_value)
+    # print("Attribute value is: ")
+    # print(attribute_value)
     if attribute_value in node.children:
         child_node = node.children[attribute_value]
         return predict(child_node, instance)
@@ -187,6 +187,17 @@ def test_decision_tree(tree, test_data):
         predictions.append(prediction)
     return predictions
 
+def calculate_accuracy(predictions, actual_labels):
+    correct_predictions = 0
+    total_predictions = len(predictions)
+
+    for i in range(total_predictions):
+        if predictions[i] == actual_labels[i]:
+            correct_predictions += 1
+
+    accuracy = correct_predictions / total_predictions
+    return accuracy
+
 
 # train_data = np.array(train.head(10))
 # attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
@@ -200,8 +211,15 @@ DT = LEARN_DECISION_TREE(train_data, attributes, target)
 print("Decision Tree:")
 print_tree(DT)
 
-test_data = np.array(train.tail(12))[:, :-1]
+NumberOfTestData = 5
+
+test_data = np.array(train.tail(NumberOfTestData))[:, :-1]
 predictions = test_decision_tree(DT, test_data)
 print("Predictions:")
 print(predictions)
+
+accuracy = calculate_accuracy(predictions, target[-NumberOfTestData:])
+print("Accuracy:", accuracy * 100)
+
+
 
