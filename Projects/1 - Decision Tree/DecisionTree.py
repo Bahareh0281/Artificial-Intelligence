@@ -76,8 +76,7 @@ def PLURALITY_VALUE(examples):
 
 
 def find_attribute_index(attribute, attributes):
-    attribute_list = list(attributes)
-    index = attribute_list.index(attribute)
+    index = attributes.index(attribute)
     return index
 
 
@@ -109,26 +108,40 @@ def entropy_help(examples):
 
 
 def select_best_attribute_GiniIndex(attributes, examples):
+    print("========================================")
     best_attribute = None
     best_gini_index = float('inf')
 
+    print("Attributes::::")
+    print(attributes)
+
+    print ("Examples:::::")
+    print(examples)
+
     for attribute in attributes:
-        # attribute_values = np.unique(examples[:, find_attribute_index(attribute, attributes)])
-        attribute_values = np.unique(examples[:, attribute])
+        print("++++++++++++++++++++++++++++++++++++")
+        attribute_values = np.unique(examples[:, find_attribute_index(attribute, attributes)])
+        # attribute_values = np.unique(examples[:, attribute])
         attribute_gini_index = 0
 
+        print ("Attribute is: " + attribute)
+        print ("Attribute index is: " + str(find_attribute_index(attribute, attributes)))
+
         for value in attribute_values:
-            # value_examples = examples[examples[:, find_attribute_index(attribute, attributes)] == value]
-            value_examples = examples[examples[:, attribute] == value]
+            print("-------------------------")
+            value_examples = examples[examples[:, find_attribute_index(attribute, attributes)] == value]
+            # value_examples = examples[examples[:, attribute] == value]
             value_prob = len(value_examples) / len(examples)
             value_gini_index = GiniIndex_help(value_examples[:, -1])
 
             attribute_gini_index += value_prob * value_gini_index
+            print ("attribute_gini_index is: " + str(attribute_gini_index))
 
         if attribute_gini_index < best_gini_index:
             best_gini_index = attribute_gini_index
             best_attribute = attribute
 
+    print("Best Attribute is: " + best_attribute)
     return best_attribute
 
 def GiniIndex_help(labels):
@@ -151,33 +164,33 @@ def LEARN_DECISION_TREE(examples, attributes, parent_examples):
     else:
         # A = select_best_attribute_GiniIndex(attributes, examples)
         A = select_best_attribute_entropy(attributes, examples)
-        print(A) 
-        # A_index = find_attribute_index(A, examples)
+        # print(A) 
+        A_index = find_attribute_index(A, attributes)
         tree = Node(attribute=A)
         
-        # for value in np.unique(examples[:, A_index]):
-        for value in np.unique(examples[:, A]):
-            # exs = examples[examples[:, A_index] == value]
-            exs = examples[examples[:, A] == value]
-            subtree = LEARN_DECISION_TREE(exs, attributes - {A}, examples)
+        for value in np.unique(examples[:, A_index]):
+        # for value in np.unique(examples[:, A]):
+            exs = examples[examples[:, A_index] == value]
+            # exs = examples[examples[:, A] == value]
+            subtree = LEARN_DECISION_TREE(exs, attributes[:A_index] + attributes[A_index+1:], examples)
             tree.add_child(value, subtree)
         
         return tree
     
 
-# def print_tree(node, indent=''):
-#     if node.label is not None:
-#         print(indent + "Label:", node.label)
-#     else:
-#         print(indent + "Attribute:", node.attribute)
-#         for value, child_node in node.children.items():
-#             print(indent + "Value:", value)
-#             print_tree(child_node, indent + "  ")
+def print_tree(node, indent=''):
+    if node.label is not None:
+        print(indent + "Label:", node.label)
+    else:
+        print(indent + "Attribute:", node.attribute)
+        for value, child_node in node.children.items():
+            print(indent + "Value:", value)
+            print_tree(child_node, indent + "  ")
 
 
 train_data = np.array(train.head(10))
-attributes = {'Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est'}
+attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
 DT = LEARN_DECISION_TREE(train_data, attributes, np.array([]))
 
-# print("Decision Tree:")
-# print_tree(DT)
+print("Decision Tree:")
+print_tree(DT)
