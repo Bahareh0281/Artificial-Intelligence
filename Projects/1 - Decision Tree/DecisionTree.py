@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+
 train = pd.read_csv('Restaurant.csv')
 # print (train.info())
 
@@ -23,8 +24,8 @@ train["Res"] = train["Res"].replace(YesNo_Mapping)
 train["WillWait"] = train["WillWait"].replace(YesNo_Mapping)
 
 Pat_Mapping = {
-    "None": 0,
-    "Some": 0.5,
+    "None": -1,
+    "Some": 0,
     "Full": 1,
 }
 train["Pat"] = train["Pat"].replace(Pat_Mapping)
@@ -145,6 +146,7 @@ def select_best_attribute_GiniIndex(attributes, examples):
     return best_attribute
 
 def GiniIndex_help(labels):
+    labels = labels.astype(int)
     label_counts = np.bincount(labels)
     label_probs = label_counts / len(labels)
     gini_index = 1 - np.sum(label_probs ** 2)
@@ -162,8 +164,8 @@ def LEARN_DECISION_TREE(examples, attributes, parent_examples):
         return Node(label=PLURALITY_VALUE(examples))
     
     else:
-        # A = select_best_attribute_GiniIndex(attributes, examples)
-        A = select_best_attribute_entropy(attributes, examples)
+        A = select_best_attribute_GiniIndex(attributes, examples)
+        # A = select_best_attribute_entropy(attributes, examples)
         # print(A) 
         A_index = find_attribute_index(A, attributes)
         tree = Node(attribute=A)
@@ -188,9 +190,39 @@ def print_tree(node, indent=''):
             print_tree(child_node, indent + "  ")
 
 
+def predict(node, instance):
+    print("Node attribute is: ")
+    print(node.attribute)
+    print("Instance is: ")
+    print(instance)
+    if node.label is not None:
+        return node.label
+    attribute_value = instance[attributes.index(node.attribute)]
+    print("Attribute value is: ")
+    print(attribute_value)
+    if attribute_value in node.children:
+        child_node = node.children[attribute_value]
+        return predict(child_node, instance)
+    else:
+        # Handle missing or unseen attribute values
+        return 20
+
+def test_decision_tree(tree, test_data):
+    predictions = []
+    for instance in test_data:
+        prediction = predict(tree, instance)
+        predictions.append(prediction)
+    return predictions
+
+
 train_data = np.array(train.head(10))
 attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
 DT = LEARN_DECISION_TREE(train_data, attributes, np.array([]))
 
-print("Decision Tree:")
-print_tree(DT)
+# print("Decision Tree:")
+# print_tree(DT)
+
+test_data = np.array(train.tail(3))
+predictions = test_decision_tree(DT, test_data)
+
+print(predictions)
