@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-train = pd.read_csv('Restaurant.csv')
+train = pd.read_csv('Airplane.csv')
 # print (train.info())
 
 # print(train.head(10))
@@ -11,47 +11,15 @@ train = pd.read_csv('Restaurant.csv')
 # # nptest.sort()
 # nptest
 
-# YesNo_Mapping = {
-#     "Yes": 1,
-#     "No": 0,
-# }
-# train["Alt"] = train["Alt"].replace(YesNo_Mapping)
-# train["Bar"] = train["Bar"].replace(YesNo_Mapping)
-# train["Fri"] = train["Fri"].replace(YesNo_Mapping)
-# train["Hun"] = train["Hun"].replace(YesNo_Mapping)
-# train["Rain"] = train["Rain"].replace(YesNo_Mapping)
-# train["Res"] = train["Res"].replace(YesNo_Mapping)
-# train["WillWait"] = train["WillWait"].replace(YesNo_Mapping)
+def map_column_to_index(data_frame, column_name):
+    column_values = data_frame[column_name]
+    unique_values = column_values.unique()
+    value_to_index = {value: index for index, value in enumerate(unique_values)}
+    return value_to_index
 
-# Pat_Mapping = {
-#     "None": -1,
-#     "Some": 0,
-#     "Full": 1,
-# }
-# train["Pat"] = train["Pat"].replace(Pat_Mapping)
-
-# Price_Mapping = {
-#     "$": 1,
-#     "$$": 2,
-#     "$$$": 3,
-# }
-# train["Price"] = train["Price"].replace(Price_Mapping)
-
-# Type_Mapping = {
-#     "French": 1,
-#     "Thai": 2,
-#     "Burger": 3,
-#     "Italian": 4,
-# }
-# train["Type"] = train["Type"].replace(Type_Mapping)
-
-# Est_Mapping = {
-#     "0-10": 1,
-#     " 10-30": 2,
-#     "30-60": 3,
-#     ">60": 4,
-# }
-# train["Est"] = train["Est"].replace(Est_Mapping)
+attributes = train.columns
+for attribute in attributes:
+    train[attribute] = train[attribute].replace(map_column_to_index(train, attribute))  
 
 # # print(train[["Type", "WillWait"]].groupby(["Type"], as_index=False).mean())
 # GroupedByType = train[["Type", "WillWait"]].groupby(["Type"], as_index=False).mean()
@@ -60,22 +28,7 @@ train = pd.read_csv('Restaurant.csv')
 # GroupedByPat = train[["Pat", "WillWait"]].groupby(["Pat"], as_index=False).mean()
 # print(GroupedByPat)
 
-import pandas as pd
-
-def map_column_to_index(data_frame, column_name):
-    column_values = data_frame[column_name]
-    # column_values = column_values.str.lower().replace({'yes': 1, 'true': 1, 'no': 0, 'false': 0})    
-    unique_values = column_values.unique()
-    value_to_index = {value: index for index, value in enumerate(unique_values)}
-    return value_to_index
-
-attributes = train.columns
-# print(type(attributes))
-for attribute in attributes:
-    train[attribute] = train[attribute].replace(map_column_to_index(train, attribute))    
-
-
-print (train)
+# print (train)
 
 class Node:
     def __init__(self, attribute=None, value=None, label=None):
@@ -155,8 +108,8 @@ def LEARN_DECISION_TREE(examples, attributes, parent_examples):
         return Node(label=PLURALITY_VALUE(examples))
     
     else:
-        A = select_best_attribute_GiniIndex(attributes, examples)
-        # A = select_best_attribute_entropy(attributes, examples)
+        # A = select_best_attribute_GiniIndex(attributes, examples)
+        A = select_best_attribute_entropy(attributes, examples)
         A_index = find_attribute_index(A, attributes)
         tree = Node(attribute=A)
         
@@ -214,24 +167,37 @@ def calculate_accuracy(predictions, actual_labels):
     return accuracy
 
 
-# train_data = np.array(train.head(10))
-# attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
-# DT = LEARN_DECISION_TREE(train_data, attributes, np.array([]))
+import random
 
-train_data = np.array(train)
+def random_rows_after_2000(data_frame, num_rows):
+    total_rows = data_frame.shape[0]
+    eligible_indices = list(range(2001, total_rows))
+    
+    # if len(eligible_indices) < num_rows:
+    #     raise ValueError("Not enough eligible rows available.")
+    
+    selected_indices = random.sample(eligible_indices, num_rows)
+    selected_rows = data_frame.iloc[selected_indices]
+    
+    return selected_rows
+
+
+# train_data = np.array(train)
+train_data = random_rows_after_2000(train, 5000)
 target = train_data[:, -1]
-attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
+# attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
+attributes = list(attributes)
 DT = LEARN_DECISION_TREE(train_data, attributes, target)
 
-print("Decision Tree:")
-print_tree(DT)
+# print("Decision Tree:")
+# print_tree(DT)
 
-NumberOfTestData = 5
+NumberOfTestData = 2000
 
-test_data = np.array(train.tail(NumberOfTestData))[:, :-1]
+test_data = np.array(train.head(NumberOfTestData))[:, :-1]
 predictions = test_decision_tree(DT, test_data)
-print("Predictions:")
-print(predictions)
+# print("Predictions:")
+# print(predictions)
 
 accuracy = calculate_accuracy(predictions, target[-NumberOfTestData:])
 print("Accuracy:", accuracy * 100)
