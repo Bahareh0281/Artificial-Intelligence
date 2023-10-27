@@ -51,13 +51,12 @@ def find_attribute_index(attribute, attributes):
 
 def select_best_attribute_entropy(attributes, examples):
     best_attribute = None
-    min_entropy = np.inf
+    best_gain = -1
     for attribute in attributes:
-        entropy = entropy_help(examples[:, find_attribute_index(attribute, attributes)])
-        if entropy < min_entropy:
+        entropy = entropy_help(examples[attribute])
+        if best_attribute is None or entropy < best_gain:
             best_attribute = attribute
-            min_entropy = entropy
-
+            best_gain = entropy
     return best_attribute
 
 
@@ -101,7 +100,7 @@ def LEARN_DECISION_TREE(examples, attributes, parent_examples):
     if len(examples) == 0:
         return Node(label=PLURALITY_VALUE(parent_examples))
     
-    elif np.all(examples[:, -1] == examples[0, -1]):
+    elif np.all(examples.iloc[:, -1] == examples.iloc[0, -1]):
         return Node(label=examples[0, -1])
     
     elif len(attributes) == 0:
@@ -183,8 +182,8 @@ def random_rows_after_2000(data_frame, num_rows):
 
 
 # train_data = np.array(train)
-train_data = random_rows_after_2000(train, 5000)
-target = train_data[:, -1]
+train_data = random_rows_after_2000(train, 500)
+target = train_data.iloc[:, -1]
 # attributes = ['Alt', 'Bar', 'Fri', 'Hun', 'Pat', 'Price', 'Rain', 'Res', 'Type', 'Est']
 attributes = list(attributes)
 DT = LEARN_DECISION_TREE(train_data, attributes, target)
@@ -192,7 +191,7 @@ DT = LEARN_DECISION_TREE(train_data, attributes, target)
 # print("Decision Tree:")
 # print_tree(DT)
 
-NumberOfTestData = 2000
+NumberOfTestData = 200
 
 test_data = np.array(train.head(NumberOfTestData))[:, :-1]
 predictions = test_decision_tree(DT, test_data)
@@ -201,6 +200,3 @@ predictions = test_decision_tree(DT, test_data)
 
 accuracy = calculate_accuracy(predictions, target[-NumberOfTestData:])
 print("Accuracy:", accuracy * 100)
-
-
-
