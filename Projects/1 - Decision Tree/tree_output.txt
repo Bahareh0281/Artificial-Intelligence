@@ -1,963 +1,4097 @@
-Attribute: Customer Type
-Value: 0
+Attribute: Online boarding
+Value: 5
   Attribute: Type of Travel
   Value: 1
-    Attribute: Age
-    Value: 0
-      Attribute: Flight Distance
+    Attribute: Departure/Arrival time convenient
+    Value: 5
+      Label: 1
+    Value: 3
+      Label: 0
+    Value: 2
+      Label: 0
+    Value: 1
+      Label: 0
+    Value: 4
+      Attribute: Seat comfort
       Value: 1
-        Attribute: Gender
+        Label: 0
+      Value: 3
+        Attribute: Arrival Delay in Minutes
         Value: 1
-          Attribute: Class
+          Label: 0
+        Value: 3
+          Attribute: On-board service
+          Value: 3
+            Label: 1
+          Value: 5
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 4
+            Label: 0
+        Value: 4
+          Label: 0
+        Value: 5
+          Label: 0
+        Value: 2
+          Label: 1
+      Value: 4
+        Attribute: Gate location
+        Value: 3
+          Attribute: Gender
           Value: 1
-            Attribute: Gate location
-            Value: 0
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Inflight wifi service
-                Value: 1
-                  Attribute: Online boarding
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 1
-                        Label: 0
-            Value: 1
-              Label: 0
-        Value: 0
-          Attribute: Class
+            Label: 1
           Value: 0
-            Attribute: Gate location
-            Value: 0
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Inflight wifi service
-                Value: 0
-                  Attribute: Online boarding
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-            Value: 1
-              Label: 0
-  Value: 2
-    Attribute: Age
-    Value: 0
-      Attribute: Flight Distance
+            Label: 0
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 5
+          Label: 1
       Value: 2
+        Attribute: On-board service
+        Value: 3
+          Attribute: Age
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 1
+        Value: 2
+          Label: 0
+        Value: 5
+          Label: 1
+        Value: 4
+          Label: 0
+      Value: 5
         Attribute: Gender
+        Value: 1
+          Label: 0
         Value: 0
-          Attribute: Class
+          Label: 1
+    Value: 0
+      Label: 1
+  Value: 0
+    Attribute: Customer Type
+    Value: 1
+      Label: 1
+    Value: 0
+      Attribute: Ease of Online booking
+      Value: 5
+        Label: 1
+      Value: 3
+        Label: 0
+      Value: 4
+        Attribute: Inflight service
+        Value: 3
+          Attribute: Gender
+          Value: 1
+            Label: 0
           Value: 0
-            Attribute: Gate location
-            Value: 0
-              Attribute: Inflight wifi service
-              Value: 0
-                Attribute: Ease of Online booking
-                Value: 0
-                  Attribute: Online boarding
-                  Value: 2
-                    Attribute: Food and drink
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
+            Label: 1
+        Value: 5
+          Label: 1
+        Value: 4
+          Label: 0
+        Value: 1
+          Label: 1
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 0
+Value: 4
+  Attribute: Type of Travel
+  Value: 0
+    Attribute: Leg room service
+    Value: 5
+      Attribute: Customer Type
+      Value: 1
+        Attribute: Cleanliness
+        Value: 4
+          Attribute: Inflight wifi service
+          Value: 0
+            Label: 1
+          Value: 1
+            Attribute: Food and drink
+            Value: 4
+              Label: 1
+            Value: 3
+              Attribute: Arrival Delay in Minutes
+              Value: 2
+                Label: 0
+              Value: 4
+                Label: 1
             Value: 1
               Label: 0
+        Value: 5
+          Label: 1
+        Value: 2
+          Label: 1
         Value: 1
-          Attribute: Class
-          Value: 1
-            Attribute: Gate location
-            Value: 0
-              Attribute: Inflight wifi service
-              Value: 1
-                Attribute: Ease of Online booking
-                Value: 0
-                  Attribute: Online boarding
-                  Value: 2
-                    Attribute: Food and drink
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 1
-                        Label: 0
-  Value: 0
-    Attribute: Age
-    Value: 0
-      Attribute: Class
+          Attribute: Ease of Online booking
+          Value: 4
+            Label: 1
+          Value: 5
+            Label: 0
+        Value: 3
+          Attribute: Inflight wifi service
+          Value: 0
+            Label: 1
+          Value: 2
+            Attribute: Class
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 1
+        Value: 0
+          Label: 0
       Value: 0
-        Attribute: Gender
-        Value: 1
-          Attribute: Flight Distance
+        Attribute: Gate location
+        Value: 4
+          Attribute: Inflight entertainment
+          Value: 2
+            Attribute: Class
+            Value: 1
+              Label: 1
+            Value: 2
+              Label: 0
+          Value: 5
+            Label: 0
           Value: 1
-            Attribute: Gate location
+            Attribute: Inflight wifi service
             Value: 0
-              Attribute: Food and drink
+              Attribute: Gender
               Value: 0
-                Attribute: Departure/Arrival time convenient
+                Label: 1
+              Value: 1
+                Attribute: Food and drink
                 Value: 0
-                  Attribute: Online boarding
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 0
+                  Attribute: Flight Distance
+                  Value: 2
+                    Attribute: Age
+                    Value: 1
+                      Attribute: Class
+                      Value: 1
+                        Attribute: Departure/Arrival time convenient
+                        Value: 1
+                          Attribute: Ease of Online booking
+                          Value: 1
+                            Attribute: Seat comfort
+                            Value: 1
+                              Attribute: On-board service
+                              Value: 1
+                                Attribute: Baggage handling
+                                Value: 1
+                                  Attribute: Checkin service
+                                  Value: 1
+                                    Attribute: Inflight service
+                                    Value: 1
+                                      Attribute: Cleanliness
+                                      Value: 1
+                                        Attribute: Departure Delay in Minutes
+                                        Value: 1
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+                  Value: 1
+                    Label: 0
+                Value: 1
+                  Label: 1
+            Value: 1
+              Label: 0
+          Value: 4
+            Attribute: Departure Delay in Minutes
+            Value: 4
+              Attribute: Inflight service
+              Value: 2
+                Label: 0
+              Value: 5
+                Label: 0
+              Value: 4
+                Label: 0
+              Value: 1
+                Label: 1
+            Value: 2
+              Label: 0
+            Value: 1
+              Label: 0
+            Value: 5
+              Label: 0
+            Value: 3
+              Attribute: Class
+              Value: 2
+                Label: 1
+              Value: 0
+                Label: 0
+              Value: 1
+                Label: 1
+          Value: 3
+            Attribute: Departure Delay in Minutes
+            Value: 5
+              Label: 1
+            Value: 4
+              Attribute: Gender
+              Value: 1
+                Attribute: Flight Distance
+                Value: 3
+                  Label: 1
+                Value: 2
+                  Attribute: Age
+                  Value: 1
+                    Attribute: Class
+                    Value: 1
                       Attribute: Inflight wifi service
                       Value: 1
-                        Label: 0
-        Value: 0
-          Attribute: Flight Distance
-          Value: 0
-            Attribute: Gate location
-            Value: 0
-              Attribute: Food and drink
+                        Attribute: Departure/Arrival time convenient
+                        Value: 1
+                          Attribute: Ease of Online booking
+                          Value: 1
+                            Attribute: Food and drink
+                            Value: 1
+                              Attribute: Seat comfort
+                              Value: 1
+                                Attribute: On-board service
+                                Value: 1
+                                  Attribute: Baggage handling
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Inflight service
+                                      Value: 1
+                                        Attribute: Cleanliness
+                                        Value: 1
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 1
+                                            Label: 0
               Value: 0
-                Attribute: Inflight wifi service
-                Value: 0
-                  Attribute: Online boarding
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
+                Label: 0
             Value: 1
               Label: 0
-  Value: 3
-    Attribute: Age
-    Value: 0
-      Attribute: Gender
-      Value: 0
-        Attribute: Flight Distance
-        Value: 0
-          Attribute: Class
+            Value: 3
+              Attribute: Gender
+              Value: 1
+                Label: 1
+              Value: 0
+                Label: 0
+            Value: 2
+              Label: 0
+        Value: 3
+          Attribute: Inflight wifi service
+          Value: 1
+            Label: 0
           Value: 0
-            Attribute: Gate location
-            Value: 1
-              Attribute: Departure/Arrival time convenient
-              Value: 0
-                Attribute: Food and drink
-                Value: 3
-                  Attribute: Online boarding
-                  Value: 3
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
-            Value: 0
-              Attribute: Inflight wifi service
-              Value: 0
-                Attribute: Ease of Online booking
-                Value: 0
-                  Attribute: Food and drink
-                  Value: 0
-                    Attribute: Online boarding
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-      Value: 1
-        Attribute: Flight Distance
+            Label: 1
         Value: 0
+          Attribute: Cleanliness
+          Value: 5
+            Label: 1
+          Value: 4
+            Attribute: Inflight entertainment
+            Value: 4
+              Label: 1
+            Value: 5
+              Label: 1
+            Value: 3
+              Attribute: Gender
+              Value: 1
+                Label: 1
+              Value: 0
+                Label: 0
+            Value: 1
+              Label: 1
+          Value: 3
+            Attribute: Class
+            Value: 0
+              Label: 1
+            Value: 1
+              Label: 1
+            Value: 3
+              Label: 0
+          Value: 1
+            Label: 0
+          Value: 2
+            Label: 1
+        Value: 5
           Attribute: Class
           Value: 1
-            Attribute: Gate location
-            Value: 0
-              Attribute: Inflight wifi service
-              Value: 1
-                Attribute: Food and drink
-                Value: 3
-                  Attribute: Online boarding
-                  Value: 3
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 1
-                        Label: 0
+            Label: 1
+          Value: 2
+            Label: 0
+        Value: 2
+          Label: 0
+        Value: 1
+          Label: 0
+    Value: 4
+      Attribute: Departure/Arrival time convenient
+      Value: 4
+        Attribute: Baggage handling
+        Value: 1
+          Attribute: Cleanliness
+          Value: 3
+            Label: 0
+          Value: 4
+            Label: 1
+          Value: 1
+            Attribute: Age
             Value: 1
               Label: 0
-  Value: 4
-    Attribute: Age
-    Value: 0
-      Attribute: Flight Distance
-      Value: 4
-        Attribute: Class
-        Value: 0
-          Attribute: Gender
-          Value: 0
-            Attribute: Ease of Online booking
+            Value: 2
+              Label: 1
+          Value: 2
+            Label: 0
+          Value: 5
+            Label: 1
+        Value: 4
+          Attribute: Arrival Delay in Minutes
+          Value: 4
+            Attribute: Seat comfort
+            Value: 1
+              Attribute: Age
+              Value: 3
+                Attribute: Inflight entertainment
+                Value: 1
+                  Label: 1
+                Value: 4
+                  Label: 1
+                Value: 3
+                  Label: 0
+              Value: 1
+                Attribute: Customer Type
+                Value: 1
+                  Label: 0
+                Value: 0
+                  Attribute: Gender
+                  Value: 1
+                    Label: 0
+                  Value: 0
+                    Label: 1
+              Value: 2
+                Attribute: Gender
+                Value: 0
+                  Label: 0
+                Value: 1
+                  Attribute: Gate location
+                  Value: 0
+                    Label: 0
+                  Value: 1
+                    Label: 1
+              Value: 4
+                Label: 0
             Value: 4
+              Attribute: Departure Delay in Minutes
+              Value: 4
+                Attribute: Food and drink
+                Value: 4
+                  Attribute: Gate location
+                  Value: 4
+                    Attribute: Age
+                    Value: 2
+                      Label: 1
+                    Value: 3
+                      Label: 1
+                    Value: 1
+                      Label: 1
+                    Value: 4
+                      Attribute: Gender
+                      Value: 0
+                        Attribute: Customer Type
+                        Value: 0
+                          Attribute: Class
+                          Value: 0
+                            Attribute: Flight Distance
+                            Value: 0
+                              Attribute: Inflight wifi service
+                              Value: 0
+                                Attribute: Ease of Online booking
+                                Value: 0
+                                  Attribute: Inflight entertainment
+                                  Value: 0
+                                    Attribute: On-board service
+                                    Value: 0
+                                      Attribute: Checkin service
+                                      Value: 0
+                                        Attribute: Inflight service
+                                        Value: 0
+                                          Attribute: Cleanliness
+                                          Value: 0
+                                            Label: 0
+                      Value: 1
+                        Label: 1
+                  Value: 5
+                    Label: 1
+                  Value: 3
+                    Attribute: Age
+                    Value: 2
+                      Label: 0
+                    Value: 3
+                      Label: 1
+                  Value: 1
+                    Label: 1
+                  Value: 2
+                    Label: 1
+                Value: 5
+                  Label: 0
+                Value: 3
+                  Attribute: Gender
+                  Value: 1
+                    Label: 0
+                  Value: 0
+                    Label: 1
+                Value: 2
+                  Label: 1
+              Value: 5
+                Label: 1
+              Value: 1
+                Attribute: Age
+                Value: 1
+                  Label: 0
+                Value: 3
+                  Label: 1
+                Value: 4
+                  Label: 1
+                Value: 2
+                  Attribute: Customer Type
+                  Value: 1
+                    Label: 1
+                  Value: 0
+                    Label: 0
+              Value: 3
+                Attribute: Age
+                Value: 1
+                  Attribute: Ease of Online booking
+                  Value: 1
+                    Attribute: Gender
+                    Value: 1
+                      Label: 1
+                    Value: 0
+                      Attribute: Class
+                      Value: 1
+                        Attribute: Customer Type
+                        Value: 0
+                          Attribute: Flight Distance
+                          Value: 0
+                            Attribute: Inflight wifi service
+                            Value: 0
+                              Attribute: Gate location
+                              Value: 0
+                                Attribute: Food and drink
+                                Value: 0
+                                  Attribute: Inflight entertainment
+                                  Value: 0
+                                    Attribute: On-board service
+                                    Value: 0
+                                      Attribute: Checkin service
+                                      Value: 0
+                                        Attribute: Inflight service
+                                        Value: 0
+                                          Attribute: Cleanliness
+                                          Value: 0
+                                            Label: 0
+                      Value: 0
+                        Label: 1
+                  Value: 0
+                    Label: 1
+                  Value: 2
+                    Attribute: Gender
+                    Value: 0
+                      Label: 0
+                    Value: 1
+                      Label: 1
+                Value: 2
+                  Label: 0
+                Value: 3
+                  Label: 0
+                Value: 0
+                  Label: 1
+              Value: 2
+                Attribute: Flight Distance
+                Value: 0
+                  Label: 0
+                Value: 1
+                  Label: 0
+                Value: 2
+                  Attribute: Gender
+                  Value: 1
+                    Label: 0
+                  Value: 0
+                    Label: 1
+            Value: 2
+              Attribute: Flight Distance
+              Value: 1
+                Attribute: Gender
+                Value: 1
+                  Attribute: On-board service
+                  Value: 2
+                    Attribute: Class
+                    Value: 0
+                      Label: 0
+                    Value: 2
+                      Attribute: Customer Type
+                      Value: 1
+                        Attribute: Age
+                        Value: 1
+                          Attribute: Inflight wifi service
+                          Value: 1
+                            Attribute: Ease of Online booking
+                            Value: 1
+                              Attribute: Gate location
+                              Value: 1
+                                Attribute: Food and drink
+                                Value: 1
+                                  Attribute: Inflight entertainment
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Inflight service
+                                      Value: 1
+                                        Attribute: Cleanliness
+                                        Value: 1
+                                          Attribute: Departure Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+                    Value: 3
+                      Label: 0
+                  Value: 4
+                    Label: 0
+                  Value: 3
+                    Label: 1
+                  Value: 1
+                    Label: 1
+                Value: 0
+                  Label: 1
+              Value: 0
+                Attribute: Customer Type
+                Value: 0
+                  Attribute: Gender
+                  Value: 1
+                    Attribute: Age
+                    Value: 1
+                      Attribute: Class
+                      Value: 1
+                        Attribute: Inflight wifi service
+                        Value: 1
+                          Attribute: Ease of Online booking
+                          Value: 1
+                            Attribute: Gate location
+                            Value: 1
+                              Attribute: Food and drink
+                              Value: 1
+                                Attribute: Inflight entertainment
+                                Value: 1
+                                  Attribute: On-board service
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Inflight service
+                                      Value: 1
+                                        Attribute: Cleanliness
+                                        Value: 1
+                                          Attribute: Departure Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+                Value: 1
+                  Label: 0
+              Value: 2
+                Label: 0
+            Value: 5
+              Attribute: Departure Delay in Minutes
+              Value: 4
+                Attribute: Age
+                Value: 3
+                  Label: 0
+                Value: 4
+                  Label: 0
+                Value: 1
+                  Label: 0
+                Value: 2
+                  Label: 1
+              Value: 3
+                Attribute: Inflight wifi service
+                Value: 0
+                  Attribute: Flight Distance
+                  Value: 2
+                    Label: 0
+                  Value: 1
+                    Attribute: Gender
+                    Value: 1
+                      Label: 0
+                    Value: 0
+                      Attribute: Age
+                      Value: 0
+                        Label: 0
+                      Value: 1
+                        Label: 1
+                Value: 2
+                  Label: 1
+              Value: 1
+                Label: 1
+              Value: 2
+                Attribute: Age
+                Value: 3
+                  Attribute: Food and drink
+                  Value: 5
+                    Label: 0
+                  Value: 1
+                    Label: 1
+                Value: 4
+                  Label: 1
+            Value: 3
               Attribute: Inflight wifi service
               Value: 0
-                Attribute: Online boarding
+                Attribute: Flight Distance
+                Value: 1
+                  Attribute: Gender
+                  Value: 0
+                    Label: 1
+                  Value: 1
+                    Attribute: Cleanliness
+                    Value: 1
+                      Label: 1
+                    Value: 3
+                      Label: 1
+                    Value: 4
+                      Attribute: On-board service
+                      Value: 3
+                        Label: 0
+                      Value: 4
+                        Label: 1
+                Value: 2
+                  Attribute: Customer Type
+                  Value: 1
+                    Label: 1
+                  Value: 0
+                    Label: 0
+                Value: 0
+                  Attribute: Gender
+                  Value: 1
+                    Label: 1
+                  Value: 0
+                    Label: 0
+              Value: 3
+                Label: 0
+              Value: 1
+                Attribute: Age
+                Value: 2
+                  Attribute: Gender
+                  Value: 0
+                    Label: 1
+                  Value: 1
+                    Label: 0
+                Value: 1
+                  Label: 1
+                Value: 3
+                  Label: 0
+              Value: 2
+                Label: 0
+          Value: 1
+            Attribute: Customer Type
+            Value: 0
+              Attribute: Inflight entertainment
+              Value: 5
+                Label: 0
+              Value: 1
+                Label: 0
+              Value: 2
+                Label: 1
+              Value: 4
+                Label: 0
+            Value: 1
+              Label: 1
+          Value: 2
+            Attribute: Departure Delay in Minutes
+            Value: 4
+              Attribute: Cleanliness
+              Value: 3
+                Label: 1
+              Value: 2
+                Label: 1
+              Value: 5
+                Label: 1
+              Value: 1
+                Label: 0
+              Value: 4
+                Attribute: Gate location
+                Value: 1
+                  Label: 0
+                Value: 3
+                  Label: 1
+            Value: 1
+              Label: 1
+            Value: 5
+              Label: 1
+            Value: 3
+              Label: 1
+            Value: 2
+              Attribute: Gate location
+              Value: 1
+                Label: 1
+              Value: 3
+                Label: 0
+              Value: 2
+                Attribute: Inflight wifi service
+                Value: 0
+                  Label: 1
+                Value: 1
+                  Label: 0
+              Value: 4
+                Label: 1
+          Value: 3
+            Attribute: Seat comfort
+            Value: 5
+              Attribute: Departure Delay in Minutes
+              Value: 4
+                Attribute: Age
+                Value: 2
+                  Label: 0
+                Value: 1
+                  Label: 0
+                Value: 3
+                  Label: 1
+              Value: 3
+                Label: 0
+              Value: 1
+                Label: 1
+              Value: 5
+                Label: 1
+              Value: 2
+                Label: 0
+            Value: 3
+              Attribute: Gender
+              Value: 1
+                Attribute: Food and drink
+                Value: 4
+                  Attribute: Ease of Online booking
+                  Value: 0
+                    Attribute: Class
+                    Value: 0
+                      Label: 0
+                    Value: 1
+                      Label: 1
+                  Value: 1
+                    Label: 0
+                Value: 2
+                  Label: 0
+                Value: 3
+                  Label: 0
+                Value: 0
+                  Label: 0
+                Value: 1
+                  Label: 0
+              Value: 0
+                Attribute: Class
+                Value: 1
+                  Attribute: Gate location
+                  Value: 2
+                    Label: 0
+                  Value: 0
+                    Label: 1
+                Value: 2
+                  Label: 1
+                Value: 4
+                  Label: 0
+                Value: 3
+                  Label: 1
+            Value: 4
+              Attribute: Departure Delay in Minutes
+              Value: 4
+                Label: 1
+              Value: 1
+                Attribute: Gender
+                Value: 0
+                  Attribute: Inflight entertainment
+                  Value: 4
+                    Label: 0
+                  Value: 5
+                    Label: 1
+                Value: 1
+                  Label: 1
+              Value: 2
+                Attribute: Age
+                Value: 3
+                  Label: 0
+                Value: 1
+                  Label: 1
+                Value: 2
+                  Label: 1
+              Value: 5
+                Label: 1
+            Value: 1
+              Attribute: Food and drink
+              Value: 5
+                Label: 1
+              Value: 4
+                Label: 1
+              Value: 1
+                Attribute: Age
+                Value: 2
+                  Attribute: Gender
+                  Value: 1
+                    Label: 1
+                  Value: 0
+                    Attribute: Ease of Online booking
+                    Value: 1
+                      Label: 0
+                    Value: 2
+                      Label: 1
+                Value: 4
+                  Label: 1
+                Value: 1
+                  Label: 1
+                Value: 3
+                  Label: 0
+              Value: 2
+                Label: 0
+              Value: 3
+                Label: 0
+            Value: 2
+              Attribute: Age
+              Value: 2
+                Label: 1
+              Value: 3
+                Attribute: Inflight wifi service
+                Value: 2
+                  Label: 0
+                Value: 1
+                  Attribute: Gender
+                  Value: 0
+                    Attribute: Customer Type
+                    Value: 0
+                      Attribute: Class
+                      Value: 0
+                        Attribute: Flight Distance
+                        Value: 0
+                          Attribute: Ease of Online booking
+                          Value: 0
+                            Attribute: Gate location
+                            Value: 0
+                              Attribute: Food and drink
+                              Value: 0
+                                Attribute: Inflight entertainment
+                                Value: 0
+                                  Attribute: On-board service
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Departure Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+              Value: 4
+                Label: 1
+              Value: 1
+                Attribute: Inflight wifi service
+                Value: 2
+                  Label: 1
                 Value: 1
                   Label: 1
                 Value: 0
                   Label: 0
+          Value: 5
+            Attribute: Customer Type
+            Value: 1
+              Label: 1
+            Value: 0
+              Attribute: Inflight entertainment
+              Value: 2
+                Attribute: Gender
+                Value: 0
+                  Label: 0
+                Value: 1
+                  Label: 1
+              Value: 1
+                Attribute: Food and drink
+                Value: 4
+                  Label: 0
+                Value: 5
+                  Attribute: Class
+                  Value: 2
+                    Label: 1
+                  Value: 1
+                    Label: 0
+                Value: 0
+                  Label: 1
+              Value: 3
+                Attribute: Food and drink
+                Value: 4
+                  Attribute: Gender
+                  Value: 0
+                    Label: 0
+                  Value: 1
+                    Label: 1
+                Value: 0
+                  Label: 1
+                Value: 5
+                  Label: 0
+              Value: 5
+                Attribute: Class
+                Value: 1
+                  Label: 1
+                Value: 2
+                  Label: 0
+                Value: 4
+                  Label: 1
+              Value: 4
+                Attribute: Class
+                Value: 1
+                  Label: 1
+                Value: 2
+                  Label: 0
+                Value: 3
+                  Label: 1
+        Value: 2
+          Attribute: Age
+          Value: 1
+            Attribute: Customer Type
+            Value: 1
+              Label: 0
+            Value: 0
+              Label: 1
+          Value: 3
+            Label: 1
+          Value: 0
+            Label: 0
+          Value: 2
+            Attribute: Customer Type
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 1
+        Value: 3
+          Attribute: Age
+          Value: 2
+            Attribute: Food and drink
+            Value: 5
+              Label: 0
+            Value: 0
+              Label: 0
+            Value: 4
+              Label: 1
+            Value: 3
+              Attribute: Inflight wifi service
+              Value: 0
+                Label: 0
+              Value: 1
+                Label: 1
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 0
+          Value: 1
+            Attribute: Ease of Online booking
+            Value: 0
+              Label: 1
+            Value: 2
+              Label: 0
+            Value: 1
+              Label: 1
+          Value: 3
+            Attribute: Inflight wifi service
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 1
+            Value: 2
+              Label: 1
+          Value: 0
+            Label: 0
+        Value: 5
+          Label: 1
+      Value: 1
+        Attribute: Seat comfort
+        Value: 1
+          Attribute: Checkin service
+          Value: 5
+            Label: 1
+          Value: 4
+            Label: 1
+          Value: 1
+            Attribute: Age
+            Value: 3
+              Label: 1
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 3
+            Label: 1
+        Value: 5
+          Label: 0
+      Value: 2
+        Attribute: Seat comfort
+        Value: 2
+          Label: 1
+        Value: 3
+          Label: 0
+      Value: 5
+        Label: 1
+      Value: 0
+        Label: 1
+      Value: 3
+        Attribute: Flight Distance
+        Value: 0
+          Attribute: Food and drink
+          Value: 3
+            Label: 1
+          Value: 0
+            Label: 0
+          Value: 4
+            Label: 1
+          Value: 2
+            Label: 1
+        Value: 1
+          Label: 0
+    Value: 3
+      Attribute: Departure/Arrival time convenient
+      Value: 3
+        Attribute: Arrival Delay in Minutes
+        Value: 3
+          Attribute: Food and drink
+          Value: 4
+            Label: 0
+          Value: 1
+            Attribute: Age
+            Value: 4
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 5
+            Label: 0
+          Value: 3
+            Attribute: Inflight wifi service
+            Value: 0
+              Label: 0
+            Value: 3
+              Attribute: Gender
+              Value: 0
+                Label: 0
+              Value: 1
+                Label: 1
+            Value: 2
+              Label: 0
+            Value: 1
+              Label: 1
+          Value: 2
+            Label: 1
+        Value: 1
+          Attribute: Food and drink
+          Value: 5
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 0
           Value: 1
             Label: 0
-  Value: 85
-    Label: 0
-Value: 1
-  Attribute: Type of Travel
-  Value: 2
-    Attribute: Age
-    Value: 1
-      Attribute: Gender
-      Value: 1
-        Attribute: Class
-        Value: 1
-          Attribute: Flight Distance
-          Value: 1
-            Attribute: Online boarding
+          Value: 3
+            Attribute: Gender
+            Value: 0
+              Label: 1
             Value: 1
-              Attribute: Food and drink
+              Label: 0
+        Value: 2
+          Attribute: Inflight service
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 1
+        Value: 4
+          Attribute: Gate location
+          Value: 4
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 3
+            Attribute: On-board service
+            Value: 3
+              Attribute: Customer Type
               Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 1
-                        Label: 1
-                Value: 1
-                  Label: 0
+                Label: 0
               Value: 1
-                Attribute: Gate location
+                Label: 1
+            Value: 4
+              Label: 1
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 0
+            Value: 5
+              Label: 1
+          Value: 5
+            Label: 0
+          Value: 2
+            Label: 0
+        Value: 5
+          Attribute: Customer Type
+          Value: 1
+            Label: 1
+          Value: 0
+            Label: 0
+      Value: 4
+        Attribute: Flight Distance
+        Value: 0
+          Attribute: Inflight entertainment
+          Value: 1
+            Attribute: Arrival Delay in Minutes
+            Value: 5
+              Attribute: Departure Delay in Minutes
+              Value: 3
+                Attribute: Gender
                 Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 1
-                        Label: 0
+                  Label: 1
                 Value: 0
-                  Attribute: Ease of Online booking
-                  Value: 2
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 1
-                        Label: 0
+                  Label: 0
+              Value: 4
+                Label: 1
+            Value: 1
+              Label: 0
+            Value: 4
+              Label: 1
+            Value: 3
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 2
+            Attribute: Departure Delay in Minutes
+            Value: 2
+              Label: 1
+            Value: 5
+              Attribute: Age
+              Value: 1
+                Label: 0
               Value: 2
+                Label: 0
+              Value: 3
+                Label: 1
+            Value: 3
+              Label: 0
+            Value: 4
+              Label: 0
+          Value: 4
+            Attribute: Arrival Delay in Minutes
+            Value: 4
+              Label: 1
+            Value: 2
+              Attribute: Inflight service
+              Value: 3
                 Attribute: Ease of Online booking
+                Value: 0
+                  Label: 0
                 Value: 2
-                  Attribute: Gate location
-                  Value: 2
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 1
-                        Label: 0
-            Value: 0
-              Attribute: Food and drink
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Gate location
-                  Value: 2
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-              Value: 2
-                Attribute: Gate location
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-                Value: 0
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 1
-                        Label: 1
-            Value: 2
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
-                Value: 1
                   Label: 0
-              Value: 1
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
                 Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
+                  Label: 1
+              Value: 5
+                Label: 1
               Value: 2
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Gate location
-                      Value: 1
-                        Label: 0
+                Label: 1
+              Value: 4
+                Label: 1
             Value: 3
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
-            Value: 4243
               Label: 1
-      Value: 0
-        Attribute: Class
-        Value: 0
-          Attribute: Flight Distance
-          Value: 0
-            Attribute: Online boarding
-            Value: 0
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 1
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-              Value: 1
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Departure/Arrival time convenient
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 1
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
-              Value: 2
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 0
-                        Label: 0
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
-            Value: 2
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 1
-                Value: 1
-                  Label: 0
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Gate location
-                  Value: 2
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 0
-                        Label: 0
-              Value: 2
-                Label: 0
             Value: 1
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 0
-                        Label: 1
-                Value: 1
-                  Label: 0
-              Value: 2
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Gate location
-                  Value: 2
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 0
-                        Label: 0
-              Value: 1
-                Attribute: Gate location
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-                Value: 0
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-            Value: 3
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 1
-            Value: 4983
               Label: 1
-            Value: 4502
-              Label: 0
-  Value: 3
-    Attribute: Age
-    Value: 1
-      Attribute: Gender
-      Value: 0
-        Attribute: Class
-        Value: 0
-          Attribute: Flight Distance
-          Value: 0
-            Attribute: Food and drink
-            Value: 1
-              Attribute: Gate location
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Online boarding
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
-              Value: 0
-                Attribute: Inflight wifi service
-                Value: 0
-                  Attribute: Online boarding
-                  Value: 3
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-            Value: 0
-              Attribute: Online boarding
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 0
-                        Label: 1
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
+            Value: 5
+              Label: 1
+          Value: 3
+            Attribute: Age
             Value: 2
               Attribute: Gate location
               Value: 0
-                Attribute: Online boarding
-                Value: 0
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 1
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Online boarding
-                      Value: 0
-                        Label: 0
-      Value: 1
-        Attribute: Class
-        Value: 1
-          Attribute: Flight Distance
-          Value: 1
-            Attribute: Online boarding
-            Value: 2
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
-                Value: 1
-                  Label: 0
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Gate location
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-              Value: 2
                 Label: 0
-            Value: 0
-              Attribute: Gate location
               Value: 1
-                Attribute: Inflight wifi service
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Food and drink
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-              Value: 0
-                Attribute: Food and drink
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
+                Label: 1
             Value: 3
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 1
-                        Label: 1
-              Value: 1
-                Label: 0
-            Value: 1
-              Attribute: Food and drink
-              Value: 2
-                Attribute: Inflight wifi service
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Gate location
-                      Value: 1
-                        Label: 0
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Gate location
-                  Value: 3
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 1
-                      Attribute: Departure/Arrival time convenient
-                      Value: 1
-                        Label: 0
-            Value: 4963
-              Label: 0
-  Value: 1
-    Attribute: Age
-    Value: 1
-      Attribute: Gender
-      Value: 0
-        Attribute: Class
-        Value: 0
-          Attribute: Flight Distance
-          Value: 0
-            Attribute: Food and drink
-            Value: 1
-              Attribute: Gate location
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Online boarding
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
-              Value: 0
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Ease of Online booking
-                  Value: 1
-                    Attribute: Online boarding
-                    Value: 1
-                      Attribute: Inflight wifi service
-                      Value: 0
-                        Label: 0
+              Label: 1
             Value: 0
-              Attribute: Online boarding
-              Value: 0
-                Attribute: Gate location
-                Value: 0
-                  Attribute: Ease of Online booking
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 1
-                Value: 1
-                  Attribute: Ease of Online booking
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-            Value: 2
-              Attribute: Gate location
-              Value: 0
-                Attribute: Online boarding
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 1
+              Label: 1
+            Value: 1
+              Attribute: Gender
               Value: 1
-                Attribute: Online boarding
-                Value: 1
-                  Attribute: Ease of Online booking
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Departure/Arrival time convenient
-                      Value: 0
-                        Label: 0
-      Value: 1
-        Attribute: Class
+                Label: 1
+              Value: 0
+                Label: 0
+          Value: 5
+            Attribute: Gender
+            Value: 1
+              Label: 0
+            Value: 0
+              Label: 1
         Value: 1
-          Attribute: Flight Distance
+          Attribute: Age
+          Value: 0
+            Label: 0
+          Value: 2
+            Attribute: Seat comfort
+            Value: 2
+              Label: 0
+            Value: 3
+              Label: 1
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 0
+            Value: 4
+              Label: 0
+            Value: 5
+              Label: 0
           Value: 1
+            Attribute: Departure Delay in Minutes
+            Value: 1
+              Label: 1
+            Value: 3
+              Attribute: Seat comfort
+              Value: 2
+                Label: 0
+              Value: 4
+                Label: 1
+              Value: 0
+                Label: 1
+            Value: 4
+              Attribute: Seat comfort
+              Value: 4
+                Attribute: Gender
+                Value: 0
+                  Attribute: Checkin service
+                  Value: 3
+                    Attribute: Customer Type
+                    Value: 0
+                      Attribute: Class
+                      Value: 0
+                        Attribute: Inflight wifi service
+                        Value: 0
+                          Attribute: Ease of Online booking
+                          Value: 0
+                            Attribute: Gate location
+                            Value: 0
+                              Attribute: Food and drink
+                              Value: 0
+                                Attribute: Inflight entertainment
+                                Value: 0
+                                  Attribute: On-board service
+                                  Value: 0
+                                    Attribute: Baggage handling
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+                  Value: 4
+                    Label: 0
+                Value: 1
+                  Attribute: Customer Type
+                  Value: 1
+                    Attribute: Class
+                    Value: 1
+                      Attribute: Inflight wifi service
+                      Value: 1
+                        Attribute: Ease of Online booking
+                        Value: 1
+                          Attribute: Gate location
+                          Value: 1
+                            Attribute: Food and drink
+                            Value: 1
+                              Attribute: Inflight entertainment
+                              Value: 1
+                                Attribute: On-board service
+                                Value: 1
+                                  Attribute: Baggage handling
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Inflight service
+                                      Value: 1
+                                        Attribute: Cleanliness
+                                        Value: 1
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+              Value: 3
+                Label: 0
+              Value: 2
+                Label: 0
+            Value: 5
+              Attribute: Seat comfort
+              Value: 4
+                Label: 0
+              Value: 0
+                Label: 1
+            Value: 2
+              Label: 0
+          Value: 3
+            Attribute: Seat comfort
+            Value: 4
+              Label: 1
+            Value: 1
+              Label: 1
+            Value: 3
+              Label: 0
+            Value: 5
+              Label: 0
+          Value: 4
+            Label: 0
+        Value: 2
+          Attribute: Age
+          Value: 2
+            Label: 1
+          Value: 4
+            Attribute: Gender
+            Value: 1
+              Label: 1
+            Value: 0
+              Label: 0
+          Value: 1
+            Label: 0
+      Value: 0
+        Label: 1
+      Value: 5
+        Label: 1
+      Value: 2
+        Attribute: Departure Delay in Minutes
+        Value: 2
+          Attribute: Age
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 1
+            Label: 1
+        Value: 5
+          Label: 1
+        Value: 3
+          Label: 1
+        Value: 4
+          Label: 1
+      Value: 1
+        Attribute: Customer Type
+        Value: 1
+          Label: 1
+        Value: 0
+          Label: 0
+    Value: 2
+      Attribute: On-board service
+      Value: 3
+        Attribute: Flight Distance
+        Value: 0
+          Label: 0
+        Value: 1
+          Attribute: Inflight entertainment
+          Value: 1
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 3
             Attribute: Gate location
-            Value: 0
-              Attribute: Food and drink
-              Value: 0
-                Attribute: Online boarding
-                Value: 0
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 1
-            Value: 1
-              Attribute: Departure/Arrival time convenient
-              Value: 1
+            Value: 4
+              Label: 0
+            Value: 3
+              Label: 1
+        Value: 2
+          Label: 0
+      Value: 5
+        Label: 1
+      Value: 4
+        Attribute: Departure/Arrival time convenient
+        Value: 5
+          Label: 1
+        Value: 2
+          Attribute: Seat comfort
+          Value: 1
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 2
+            Attribute: Food and drink
+            Value: 2
+              Attribute: Checkin service
+              Value: 5
                 Attribute: Inflight wifi service
                 Value: 1
-                  Attribute: Ease of Online booking
+                  Label: 1
+                Value: 2
+                  Attribute: Gender
                   Value: 1
-                    Attribute: Online boarding
-                    Value: 1
-                      Attribute: Food and drink
-                      Value: 1
-                        Label: 0
-  Value: 0
-    Attribute: Age
-    Value: 1
-      Attribute: Gender
-      Value: 1
-        Attribute: Class
-        Value: 1
+                    Attribute: Class
+                    Value: 2
+                      Label: 0
+                    Value: 3
+                      Label: 1
+                  Value: 0
+                    Label: 0
+              Value: 2
+                Attribute: Inflight wifi service
+                Value: 0
+                  Label: 1
+                Value: 1
+                  Label: 0
+              Value: 4
+                Attribute: Inflight wifi service
+                Value: 2
+                  Label: 0
+                Value: 1
+                  Label: 0
+                Value: 3
+                  Label: 1
+              Value: 1
+                Label: 0
+              Value: 3
+                Attribute: Inflight wifi service
+                Value: 3
+                  Label: 1
+                Value: 1
+                  Label: 0
+            Value: 1
+              Label: 1
+            Value: 3
+              Label: 1
+            Value: 4
+              Label: 0
+            Value: 5
+              Label: 1
+          Value: 3
+            Label: 0
+          Value: 4
+            Label: 0
+        Value: 3
           Attribute: Flight Distance
+          Value: 0
+            Label: 1
           Value: 1
+            Label: 0
+        Value: 0
+          Label: 1
+        Value: 4
+          Attribute: Flight Distance
+          Value: 0
+            Label: 1
+          Value: 2
+            Label: 0
+          Value: 1
+            Attribute: Food and drink
+            Value: 0
+              Label: 1
+            Value: 3
+              Label: 0
+            Value: 4
+              Label: 0
+        Value: 1
+          Attribute: Gender
+          Value: 0
+            Label: 1
+          Value: 1
+            Attribute: Ease of Online booking
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 1
+      Value: 2
+        Attribute: Food and drink
+        Value: 4
+          Label: 0
+        Value: 3
+          Attribute: Departure Delay in Minutes
+          Value: 5
+            Attribute: Inflight wifi service
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 1
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 4
+            Label: 1
+          Value: 1
+            Label: 0
+        Value: 1
+          Attribute: Departure/Arrival time convenient
+          Value: 4
+            Label: 1
+          Value: 3
+            Label: 0
+          Value: 1
+            Label: 1
+        Value: 2
+          Attribute: Cleanliness
+          Value: 5
+            Label: 1
+          Value: 3
+            Label: 1
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 1
+        Value: 5
+          Attribute: Arrival Delay in Minutes
+          Value: 1
+            Label: 1
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 4
+            Label: 0
+      Value: 1
+        Attribute: Customer Type
+        Value: 1
+          Label: 1
+        Value: 0
+          Label: 0
+    Value: 1
+      Attribute: Departure/Arrival time convenient
+      Value: 4
+        Attribute: Gate location
+        Value: 0
+          Attribute: Cleanliness
+          Value: 3
+            Label: 1
+          Value: 1
+            Label: 1
+          Value: 2
+            Label: 0
+          Value: 4
+            Attribute: Gender
+            Value: 0
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 5
+            Attribute: Age
+            Value: 3
+              Label: 0
+            Value: 1
+              Label: 1
+        Value: 5
+          Attribute: Inflight entertainment
+          Value: 1
+            Label: 1
+          Value: 4
+            Label: 1
+          Value: 5
+            Label: 0
+          Value: 3
+            Label: 1
+          Value: 2
+            Label: 0
+        Value: 4
+          Attribute: Departure Delay in Minutes
+          Value: 2
+            Attribute: Age
+            Value: 2
+              Label: 1
+            Value: 3
+              Attribute: Inflight wifi service
+              Value: 2
+                Label: 1
+              Value: 0
+                Label: 0
+            Value: 1
+              Label: 1
+          Value: 3
+            Attribute: Inflight entertainment
+            Value: 4
+              Label: 1
+            Value: 1
+              Attribute: Gender
+              Value: 1
+                Label: 0
+              Value: 0
+                Label: 1
+            Value: 5
+              Label: 1
+            Value: 3
+              Label: 0
+          Value: 5
+            Attribute: Inflight entertainment
+            Value: 5
+              Label: 1
+            Value: 4
+              Label: 0
+            Value: 3
+              Label: 0
+            Value: 2
+              Label: 0
+          Value: 4
+            Attribute: Cleanliness
+            Value: 4
+              Label: 0
+            Value: 3
+              Label: 1
+            Value: 2
+              Label: 0
+            Value: 5
+              Label: 1
+          Value: 1
+            Label: 0
+        Value: 1
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 3
+          Label: 0
+      Value: 1
+        Attribute: Gate location
+        Value: 2
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 1
+          Attribute: Checkin service
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 1
+          Value: 4
+            Label: 0
+        Value: 4
+          Label: 0
+        Value: 5
+          Label: 0
+        Value: 0
+          Label: 1
+      Value: 0
+        Label: 1
+      Value: 5
+        Label: 1
+      Value: 3
+        Attribute: Inflight entertainment
+        Value: 5
+          Label: 1
+        Value: 1
+          Label: 0
+        Value: 3
+          Label: 0
+      Value: 2
+        Attribute: Gender
+        Value: 1
+          Label: 0
+        Value: 0
+          Label: 1
+  Value: 1
+    Attribute: Departure/Arrival time convenient
+    Value: 4
+      Attribute: Leg room service
+      Value: 4
+        Attribute: Gate location
+        Value: 1
+          Label: 0
+        Value: 3
+          Attribute: Cleanliness
+          Value: 1
+            Label: 0
+          Value: 4
+            Label: 1
+          Value: 5
+            Label: 1
+          Value: 3
+            Label: 0
+          Value: 2
+            Attribute: Age
+            Value: 3
+              Label: 0
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 1
+        Value: 2
+          Attribute: Departure Delay in Minutes
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 4
+            Attribute: Age
+            Value: 3
+              Label: 0
+            Value: 1
+              Label: 1
+          Value: 1
+            Label: 1
+        Value: 4
+          Attribute: Inflight service
+          Value: 4
+            Attribute: Inflight entertainment
+            Value: 4
+              Attribute: Age
+              Value: 2
+                Label: 0
+              Value: 1
+                Label: 0
+              Value: 0
+                Label: 1
+              Value: 3
+                Label: 0
+            Value: 1
+              Attribute: Gender
+              Value: 0
+                Label: 0
+              Value: 1
+                Attribute: Customer Type
+                Value: 1
+                  Attribute: Age
+                  Value: 1
+                    Attribute: Class
+                    Value: 1
+                      Attribute: Flight Distance
+                      Value: 1
+                        Attribute: Inflight wifi service
+                        Value: 1
+                          Attribute: Ease of Online booking
+                          Value: 1
+                            Attribute: Food and drink
+                            Value: 1
+                              Attribute: Seat comfort
+                              Value: 1
+                                Attribute: On-board service
+                                Value: 1
+                                  Attribute: Baggage handling
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Cleanliness
+                                      Value: 1
+                                        Attribute: Departure Delay in Minutes
+                                        Value: 1
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+            Value: 3
+              Attribute: Arrival Delay in Minutes
+              Value: 5
+                Label: 1
+              Value: 3
+                Label: 0
+              Value: 4
+                Attribute: Age
+                Value: 0
+                  Label: 0
+                Value: 1
+                  Label: 1
+            Value: 2
+              Label: 1
+            Value: 5
+              Label: 0
+          Value: 3
+            Attribute: Gender
+            Value: 1
+              Label: 0
+            Value: 0
+              Label: 1
+          Value: 2
+            Label: 0
+          Value: 1
+            Label: 1
+          Value: 5
+            Label: 0
+        Value: 5
+          Attribute: Age
+          Value: 3
+            Attribute: Departure Delay in Minutes
+            Value: 3
+              Label: 0
+            Value: 4
+              Label: 1
+            Value: 5
+              Label: 0
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 1
+          Value: 1
+            Attribute: Arrival Delay in Minutes
+            Value: 3
+              Attribute: Departure Delay in Minutes
+              Value: 3
+                Label: 0
+              Value: 5
+                Label: 1
+              Value: 4
+                Label: 0
+            Value: 4
+              Attribute: Inflight wifi service
+              Value: 1
+                Attribute: Gender
+                Value: 1
+                  Attribute: Customer Type
+                  Value: 1
+                    Attribute: Class
+                    Value: 1
+                      Attribute: Flight Distance
+                      Value: 1
+                        Attribute: Ease of Online booking
+                        Value: 1
+                          Attribute: Food and drink
+                          Value: 1
+                            Attribute: Seat comfort
+                            Value: 1
+                              Attribute: Inflight entertainment
+                              Value: 1
+                                Attribute: On-board service
+                                Value: 1
+                                  Attribute: Baggage handling
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Inflight service
+                                      Value: 1
+                                        Attribute: Cleanliness
+                                        Value: 1
+                                          Attribute: Departure Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+              Value: 2
+                Label: 0
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 0
+            Value: 5
+              Label: 0
+          Value: 2
+            Attribute: Gender
+            Value: 0
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 4
+            Label: 0
+          Value: 0
+            Label: 0
+        Value: 0
+          Attribute: Inflight entertainment
+          Value: 3
+            Label: 1
+          Value: 1
+            Label: 1
+          Value: 2
+            Label: 0
+      Value: 3
+        Attribute: Cleanliness
+        Value: 4
+          Attribute: Age
+          Value: 3
+            Attribute: Inflight service
+            Value: 2
+              Label: 0
+            Value: 1
+              Label: 0
+            Value: 3
+              Attribute: Food and drink
+              Value: 4
+                Label: 0
+              Value: 2
+                Label: 1
+            Value: 4
+              Label: 1
+          Value: 1
+            Attribute: Food and drink
+            Value: 4
+              Attribute: On-board service
+              Value: 4
+                Label: 1
+              Value: 3
+                Label: 0
+            Value: 2
+              Label: 0
+            Value: 5
+              Label: 0
+          Value: 2
+            Label: 0
+          Value: 4
+            Attribute: Gender
+            Value: 1
+              Label: 0
+            Value: 0
+              Label: 1
+          Value: 0
+            Label: 0
+        Value: 5
+          Attribute: Gate location
+          Value: 2
+            Attribute: Age
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 5
+            Attribute: Gender
+            Value: 1
+              Attribute: Arrival Delay in Minutes
+              Value: 4
+                Label: 0
+              Value: 3
+                Label: 1
+            Value: 0
+              Label: 0
+          Value: 4
+            Label: 0
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 1
+          Value: 3
+            Label: 0
+        Value: 2
+          Attribute: Seat comfort
+          Value: 2
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 1
+            Attribute: Age
+            Value: 3
+              Label: 0
+            Value: 0
+              Label: 1
+        Value: 3
+          Attribute: Seat comfort
+          Value: 3
+            Label: 1
+          Value: 4
+            Label: 0
+        Value: 1
+          Label: 0
+      Value: 5
+        Attribute: Arrival Delay in Minutes
+        Value: 4
+          Attribute: Cleanliness
+          Value: 5
+            Attribute: Age
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 1
+            Label: 0
+          Value: 4
+            Attribute: Age
+            Value: 1
+              Label: 1
+            Value: 0
+              Label: 0
+            Value: 2
+              Label: 0
+            Value: 3
+              Label: 0
+            Value: 4
+              Label: 0
+          Value: 2
+            Label: 0
+          Value: 0
+            Label: 1
+          Value: 3
+            Attribute: Gender
+            Value: 1
+              Label: 1
+            Value: 0
+              Label: 0
+        Value: 3
+          Attribute: Seat comfort
+          Value: 1
+            Attribute: Age
+            Value: 2
+              Label: 0
+            Value: 4
+              Label: 0
+            Value: 3
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 5
+            Attribute: Gender
+            Value: 0
+              Label: 1
+            Value: 1
+              Label: 0
+        Value: 1
+          Label: 0
+        Value: 5
+          Attribute: Inflight service
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 4
+            Attribute: Seat comfort
+            Value: 4
+              Label: 1
+            Value: 1
+              Label: 1
+            Value: 3
+              Label: 0
+            Value: 2
+              Label: 0
+          Value: 1
+            Label: 1
+          Value: 2
+            Label: 0
+        Value: 2
+          Attribute: Cleanliness
+          Value: 3
+            Attribute: Seat comfort
+            Value: 2
+              Label: 0
+            Value: 3
+              Label: 0
+            Value: 4
+              Label: 1
+          Value: 5
+            Label: 0
+          Value: 2
+            Label: 1
+          Value: 4
+            Label: 1
+          Value: 1
+            Label: 1
+      Value: 1
+        Attribute: Arrival Delay in Minutes
+        Value: 4
+          Label: 0
+        Value: 3
+          Attribute: Inflight entertainment
+          Value: 1
+            Attribute: Cleanliness
+            Value: 4
+              Label: 0
+            Value: 5
+              Attribute: Gender
+              Value: 1
+                Label: 0
+              Value: 0
+                Label: 1
+            Value: 1
+              Label: 0
+            Value: 3
+              Label: 0
+          Value: 3
+            Label: 1
+          Value: 2
+            Label: 0
+        Value: 5
+          Attribute: Age
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 0
+          Value: 2
+            Attribute: Inflight entertainment
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 0
+            Value: 5
+              Label: 1
+            Value: 4
+              Label: 1
+          Value: 3
             Attribute: Inflight wifi service
             Value: 1
-              Attribute: Gate location
+              Label: 1
+            Value: 2
+              Label: 0
+        Value: 1
+          Label: 0
+        Value: 2
+          Attribute: Age
+          Value: 4
+            Label: 1
+          Value: 0
+            Label: 1
+          Value: 1
+            Label: 0
+          Value: 3
+            Label: 0
+      Value: 2
+        Attribute: Inflight entertainment
+        Value: 2
+          Attribute: Gate location
+          Value: 5
+            Attribute: Departure Delay in Minutes
+            Value: 4
+              Attribute: Flight Distance
+              Value: 1
+                Label: 0
               Value: 0
-                Attribute: Departure/Arrival time convenient
+                Label: 1
+              Value: 2
+                Label: 0
+            Value: 1
+              Label: 1
+            Value: 5
+              Attribute: Age
+              Value: 0
+                Label: 0
+              Value: 3
+                Label: 1
+              Value: 1
+                Label: 0
+              Value: 2
+                Label: 1
+            Value: 3
+              Attribute: Age
+              Value: 1
+                Attribute: Gender
                 Value: 1
-                  Attribute: Online boarding
+                  Label: 0
+                Value: 0
+                  Label: 1
+              Value: 3
+                Label: 0
+              Value: 0
+                Label: 0
+            Value: 2
+              Label: 1
+          Value: 4
+            Attribute: Flight Distance
+            Value: 1
+              Attribute: Arrival Delay in Minutes
+              Value: 5
+                Attribute: Age
+                Value: 3
+                  Attribute: Gender
                   Value: 0
-                    Attribute: Food and drink
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
+                    Attribute: Customer Type
+                    Value: 0
+                      Attribute: Class
+                      Value: 0
+                        Attribute: Inflight wifi service
+                        Value: 0
+                          Attribute: Ease of Online booking
+                          Value: 0
+                            Attribute: Food and drink
+                            Value: 0
+                              Attribute: Seat comfort
+                              Value: 0
+                                Attribute: On-board service
+                                Value: 0
+                                  Attribute: Baggage handling
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Departure Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+                Value: 2
+                  Label: 0
+                Value: 1
+                  Label: 0
+              Value: 4
+                Label: 0
+              Value: 2
+                Label: 0
+              Value: 3
+                Attribute: Age
+                Value: 2
+                  Label: 0
+                Value: 1
+                  Attribute: Gender
+                  Value: 0
+                    Attribute: Customer Type
+                    Value: 0
+                      Attribute: Class
+                      Value: 0
+                        Attribute: Inflight wifi service
+                        Value: 0
+                          Attribute: Ease of Online booking
+                          Value: 0
+                            Attribute: Food and drink
+                            Value: 0
+                              Attribute: Seat comfort
+                              Value: 0
+                                Attribute: On-board service
+                                Value: 0
+                                  Attribute: Baggage handling
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Departure Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+              Value: 1
+                Label: 0
+            Value: 2
+              Label: 1
+          Value: 2
+            Attribute: Departure Delay in Minutes
+            Value: 4
+              Label: 1
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 3
+            Label: 0
+          Value: 1
+            Attribute: Age
+            Value: 1
+              Label: 1
+            Value: 2
+              Label: 1
+            Value: 0
+              Label: 0
+        Value: 5
+          Label: 1
+        Value: 3
+          Label: 0
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 1
+    Value: 2
+      Label: 0
+    Value: 5
+      Label: 1
+    Value: 3
+      Label: 0
+    Value: 1
+      Label: 0
+    Value: 0
+      Label: 1
+Value: 1
+  Attribute: Inflight wifi service
+  Value: 1
+    Attribute: Food and drink
+    Value: 5
+      Label: 0
+    Value: 2
+      Label: 0
+    Value: 4
+      Label: 0
+    Value: 3
+      Label: 0
+    Value: 1
+      Attribute: Class
       Value: 0
-        Attribute: Class
+        Attribute: On-board service
+        Value: 1
+          Attribute: Checkin service
+          Value: 1
+            Label: 0
+          Value: 5
+            Attribute: Customer Type
+            Value: 1
+              Label: 1
+            Value: 0
+              Label: 0
+          Value: 3
+            Label: 1
+          Value: 2
+            Label: 0
+        Value: 3
+          Label: 1
+        Value: 2
+          Attribute: Departure/Arrival time convenient
+          Value: 0
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 4963
+            Label: 1
+        Value: 5
+          Attribute: Customer Type
+          Value: 1
+            Label: 1
+          Value: 0
+            Label: 0
+        Value: 4
+          Attribute: Type of Travel
+          Value: 0
+            Label: 1
+          Value: 1
+            Label: 0
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 0
+  Value: 4
+    Attribute: Food and drink
+    Value: 4
+      Attribute: Type of Travel
+      Value: 0
+        Label: 1
+      Value: 1
+        Label: 0
+    Value: 2
+      Attribute: Baggage handling
+      Value: 1
+        Label: 0
+      Value: 3
+        Label: 0
+      Value: 2
+        Label: 0
+      Value: 4
+        Label: 1
+      Value: 5
+        Label: 0
+    Value: 1
+      Attribute: Flight Distance
+      Value: 2
+        Label: 0
+      Value: 3
+        Label: 0
+      Value: 0
+        Label: 1
+    Value: 3
+      Attribute: Age
+      Value: 3
+        Label: 0
+      Value: 4
+        Label: 1
+      Value: 0
+        Label: 0
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 0
+    Value: 5
+      Label: 0
+  Value: 2
+    Attribute: Ease of Online booking
+    Value: 4
+      Label: 0
+    Value: 2
+      Attribute: Class
+      Value: 0
+        Attribute: Checkin service
+        Value: 5
+          Label: 1
+        Value: 2
+          Attribute: Gender
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 1
+        Value: 4
+          Label: 1
+        Value: 3
+          Label: 1
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 0
+    Value: 1
+      Label: 0
+    Value: 3
+      Attribute: Arrival Delay in Minutes
+      Value: 2
+        Label: 0
+      Value: 4
+        Label: 0
+      Value: 3
+        Label: 0
+      Value: 5
+        Label: 1
+    Value: 5
+      Attribute: Age
+      Value: 0
+        Label: 0
+      Value: 1
+        Label: 0
+      Value: 4
+        Label: 0
+      Value: 2
+        Attribute: Gender
         Value: 0
+          Label: 0
+        Value: 1
+          Label: 1
+      Value: 3
+        Label: 0
+    Value: 0
+      Label: 0
+  Value: 3
+    Attribute: Ease of Online booking
+    Value: 3
+      Attribute: Class
+      Value: 0
+        Attribute: Type of Travel
+        Value: 0
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 1
+        Attribute: Checkin service
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 5
+          Label: 0
+        Value: 2
+          Label: 1
+      Value: 2
+        Label: 0
+    Value: 5
+      Label: 0
+    Value: 4
+      Attribute: Food and drink
+      Value: 3
+        Label: 0
+      Value: 2
+        Label: 0
+      Value: 4
+        Attribute: Age
+        Value: 2
+          Label: 0
+        Value: 3
+          Label: 1
+      Value: 1
+        Label: 0
+    Value: 0
+      Label: 0
+    Value: 2
+      Attribute: Inflight entertainment
+      Value: 3
+        Label: 0
+      Value: 1
+        Label: 0
+      Value: 5
+        Label: 1
+      Value: 2
+        Label: 0
+    Value: 1
+      Label: 0
+  Value: 0
+    Attribute: Gate location
+    Value: 1
+      Label: 1
+    Value: 0
+      Label: 1
+    Value: 4
+      Label: 0
+    Value: 5
+      Label: 0
+  Value: 5
+    Label: 1
+Value: 3
+  Attribute: Inflight wifi service
+  Value: 3
+    Attribute: Ease of Online booking
+    Value: 3
+      Attribute: Customer Type
+      Value: 0
+        Attribute: Flight Distance
+        Value: 1
+          Label: 0
+        Value: 0
+          Attribute: Leg room service
+          Value: 3
+            Label: 0
+          Value: 1
+            Attribute: Arrival Delay in Minutes
+            Value: 3
+              Attribute: Gate location
+              Value: 1
+                Label: 0
+              Value: 0
+                Label: 1
+            Value: 5
+              Label: 0
+            Value: 2
+              Label: 0
+            Value: 4
+              Label: 0
+            Value: 1
+              Label: 0
+          Value: 5
+            Attribute: Gate location
+            Value: 0
+              Label: 0
+            Value: 1
+              Attribute: Gender
+              Value: 0
+                Label: 0
+              Value: 1
+                Attribute: Class
+                Value: 2
+                  Attribute: Inflight service
+                  Value: 1
+                    Label: 0
+                  Value: 3
+                    Label: 1
+                Value: 1
+                  Label: 0
+          Value: 2
+            Attribute: Arrival Delay in Minutes
+            Value: 5
+              Attribute: Departure Delay in Minutes
+              Value: 3
+                Label: 0
+              Value: 5
+                Label: 0
+              Value: 4
+                Label: 1
+            Value: 4
+              Label: 0
+            Value: 3
+              Attribute: Inflight service
+              Value: 1
+                Label: 0
+              Value: 2
+                Label: 1
+              Value: 4
+                Label: 0
+            Value: 2
+              Label: 0
+          Value: 4
+            Label: 0
+        Value: 2
+          Label: 0
+      Value: 1
+        Attribute: Departure Delay in Minutes
+        Value: 4
           Attribute: Flight Distance
           Value: 0
-            Attribute: Gate location
+            Attribute: Cleanliness
+            Value: 4
+              Label: 1
+            Value: 5
+              Label: 1
+            Value: 3
+              Label: 0
+            Value: 2
+              Label: 0
             Value: 1
+              Label: 1
+          Value: 1
+            Attribute: Type of Travel
+            Value: 4
+              Label: 0
+            Value: 2
               Attribute: Departure/Arrival time convenient
               Value: 1
-                Attribute: Inflight wifi service
-                Value: 0
-                  Attribute: Food and drink
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Online boarding
-                      Value: 0
-                        Label: 0
-            Value: 0
-              Attribute: Food and drink
+                Label: 0
               Value: 0
-                Attribute: Online boarding
+                Attribute: Gender
                 Value: 0
-                  Attribute: Inflight wifi service
+                  Attribute: Age
                   Value: 0
-                    Attribute: Departure/Arrival time convenient
+                    Attribute: Class
                     Value: 0
-                      Attribute: Ease of Online booking
+                      Attribute: Gate location
                       Value: 0
-                        Label: 0
-  Value: 4
-    Attribute: Age
-    Value: 1
-      Attribute: Gender
-      Value: 1
-        Attribute: Flight Distance
+                        Attribute: Food and drink
+                        Value: 0
+                          Attribute: Seat comfort
+                          Value: 0
+                            Attribute: Inflight entertainment
+                            Value: 0
+                              Attribute: On-board service
+                              Value: 0
+                                Attribute: Leg room service
+                                Value: 0
+                                  Attribute: Baggage handling
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+            Value: 3
+              Label: 0
+            Value: 1
+              Label: 0
+            Value: 0
+              Label: 0
+          Value: 2
+            Label: 0
+        Value: 3
+          Attribute: Departure/Arrival time convenient
+          Value: 0
+            Attribute: Type of Travel
+            Value: 0
+              Label: 0
+            Value: 3
+              Attribute: Gate location
+              Value: 1
+                Label: 0
+              Value: 2
+                Attribute: Gender
+                Value: 0
+                  Attribute: Age
+                  Value: 0
+                    Attribute: Class
+                    Value: 0
+                      Attribute: Flight Distance
+                      Value: 0
+                        Attribute: Food and drink
+                        Value: 0
+                          Attribute: Seat comfort
+                          Value: 0
+                            Attribute: Inflight entertainment
+                            Value: 0
+                              Attribute: On-board service
+                              Value: 0
+                                Attribute: Leg room service
+                                Value: 0
+                                  Attribute: Baggage handling
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+                Value: 1
+                  Label: 0
+              Value: 0
+                Label: 0
+            Value: 2
+              Attribute: Inflight service
+              Value: 3
+                Label: 0
+              Value: 2
+                Label: 1
+              Value: 4
+                Label: 0
+              Value: 5
+                Label: 0
+              Value: 1
+                Attribute: Gender
+                Value: 1
+                  Label: 1
+                Value: 0
+                  Label: 0
+            Value: 1
+              Label: 0
+            Value: 4
+              Label: 0
+          Value: 2
+            Attribute: Type of Travel
+            Value: 3
+              Label: 0
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 1
+            Attribute: Leg room service
+            Value: 3
+              Label: 0
+            Value: 1
+              Attribute: Type of Travel
+              Value: 3
+                Attribute: Gender
+                Value: 0
+                  Attribute: Age
+                  Value: 0
+                    Attribute: Class
+                    Value: 0
+                      Attribute: Flight Distance
+                      Value: 0
+                        Attribute: Gate location
+                        Value: 0
+                          Attribute: Food and drink
+                          Value: 0
+                            Attribute: Seat comfort
+                            Value: 0
+                              Attribute: Inflight entertainment
+                              Value: 0
+                                Attribute: On-board service
+                                Value: 0
+                                  Attribute: Baggage handling
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Inflight service
+                                      Value: 0
+                                        Attribute: Cleanliness
+                                        Value: 0
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+              Value: 2
+                Label: 0
+            Value: 5
+              Label: 0
+            Value: 4
+              Label: 0
+            Value: 2
+              Label: 0
+          Value: 3
+            Label: 0
+        Value: 2
+          Attribute: Flight Distance
+          Value: 1
+            Label: 0
+          Value: 2
+            Attribute: Gender
+            Value: 1
+              Label: 1
+            Value: 0
+              Label: 0
+          Value: 0
+            Label: 0
+        Value: 5
+          Attribute: Class
+          Value: 0
+            Label: 1
+          Value: 1
+            Label: 0
         Value: 1
           Attribute: Class
           Value: 1
-            Attribute: Online boarding
-            Value: 0
-              Attribute: Gate location
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 1
-                    Attribute: Food and drink
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
-              Value: 0
-                Attribute: Inflight wifi service
-                Value: 1
-                  Attribute: Departure/Arrival time convenient
-                  Value: 1
-                    Attribute: Food and drink
-                    Value: 1
-                      Attribute: Ease of Online booking
-                      Value: 1
-                        Label: 0
+            Label: 0
+          Value: 0
+            Label: 1
+    Value: 2
+      Attribute: Seat comfort
+      Value: 2
+        Attribute: Inflight service
+        Value: 3
+          Label: 0
+        Value: 4
+          Attribute: Age
+          Value: 2
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 3
+            Attribute: Cleanliness
+            Value: 3
+              Label: 1
             Value: 1
-              Attribute: Ease of Online booking
-              Value: 4
-                Attribute: Inflight wifi service
-                Value: 1
-                  Attribute: Food and drink
-                  Value: 4
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Gate location
-                      Value: 1
-                        Label: 0
+              Label: 0
+          Value: 0
+            Label: 0
+        Value: 2
+          Attribute: Flight Distance
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 0
+          Value: 2
+            Attribute: Gender
+            Value: 0
+              Label: 0
+            Value: 1
+              Label: 1
+        Value: 1
+          Attribute: Age
+          Value: 2
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 3
+            Attribute: Inflight entertainment
             Value: 2
-              Attribute: Inflight wifi service
+              Attribute: Gender
+              Value: 0
+                Attribute: Customer Type
+                Value: 0
+                  Attribute: Type of Travel
+                  Value: 0
+                    Attribute: Class
+                    Value: 0
+                      Attribute: Flight Distance
+                      Value: 0
+                        Attribute: Departure/Arrival time convenient
+                        Value: 0
+                          Attribute: Gate location
+                          Value: 0
+                            Attribute: Food and drink
+                            Value: 0
+                              Attribute: On-board service
+                              Value: 0
+                                Attribute: Leg room service
+                                Value: 0
+                                  Attribute: Baggage handling
+                                  Value: 0
+                                    Attribute: Checkin service
+                                    Value: 0
+                                      Attribute: Cleanliness
+                                      Value: 0
+                                        Attribute: Departure Delay in Minutes
+                                        Value: 0
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 0
+                                            Label: 0
+            Value: 3
+              Label: 0
+        Value: 5
+          Label: 1
+      Value: 4
+        Label: 0
+      Value: 3
+        Label: 0
+      Value: 5
+        Label: 1
+      Value: 1
+        Label: 0
+    Value: 5
+      Attribute: Arrival Delay in Minutes
+      Value: 4
+        Label: 0
+      Value: 5
+        Attribute: Type of Travel
+        Value: 1
+          Label: 0
+        Value: 0
+          Attribute: Customer Type
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 1
+      Value: 1
+        Attribute: Food and drink
+        Value: 3
+          Label: 0
+        Value: 5
+          Attribute: Gender
+          Value: 0
+            Label: 1
+          Value: 1
+            Label: 0
+        Value: 4
+          Label: 0
+      Value: 3
+        Label: 0
+      Value: 2
+        Attribute: Type of Travel
+        Value: 1
+          Label: 0
+        Value: 0
+          Attribute: Inflight service
+          Value: 2
+            Label: 0
+          Value: 1
+            Attribute: Gender
+            Value: 0
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 5
+            Label: 1
+    Value: 4
+      Attribute: Food and drink
+      Value: 3
+        Label: 0
+      Value: 4
+        Attribute: Arrival Delay in Minutes
+        Value: 2
+          Attribute: Cleanliness
+          Value: 3
+            Label: 0
+          Value: 1
+            Label: 1
+          Value: 5
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 4
+            Label: 0
+        Value: 4
+          Attribute: Age
+          Value: 2
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 3
+            Attribute: Departure/Arrival time convenient
+            Value: 1
+              Attribute: Gender
+              Value: 0
+                Label: 0
               Value: 1
-                Attribute: Ease of Online booking
+                Label: 1
+            Value: 0
+              Label: 0
+            Value: 3
+              Label: 0
+          Value: 4
+            Label: 1
+          Value: 0
+            Label: 0
+        Value: 1
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 5
+          Label: 1
+      Value: 2
+        Attribute: Arrival Delay in Minutes
+        Value: 4
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 1
+          Label: 0
+        Value: 5
+          Label: 1
+      Value: 5
+        Label: 0
+      Value: 1
+        Label: 0
+    Value: 1
+      Attribute: Arrival Delay in Minutes
+      Value: 3
+        Label: 0
+      Value: 1
+        Label: 0
+      Value: 5
+        Attribute: Gender
+        Value: 0
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 2
+        Attribute: Leg room service
+        Value: 3
+          Attribute: Age
+          Value: 4
+            Label: 0
+          Value: 2
+            Attribute: Gender
+            Value: 0
+              Attribute: Departure Delay in Minutes
+              Value: 4
+                Label: 0
+              Value: 3
+                Label: 1
+              Value: 1
+                Label: 1
+            Value: 1
+              Label: 0
+          Value: 1
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 0
+            Label: 0
+        Value: 2
+          Label: 0
+        Value: 5
+          Label: 0
+        Value: 4
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 4
+        Attribute: Departure Delay in Minutes
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 5
+          Attribute: Type of Travel
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 1
+    Value: 0
+      Label: 0
+  Value: 5
+    Attribute: Seat comfort
+    Value: 5
+      Attribute: Inflight service
+      Value: 5
+        Label: 1
+      Value: 3
+        Label: 1
+      Value: 4
+        Attribute: Flight Distance
+        Value: 3
+          Label: 0
+        Value: 1
+          Label: 1
+        Value: 0
+          Label: 0
+      Value: 2
+        Label: 1
+    Value: 1
+      Label: 1
+    Value: 3
+      Label: 1
+    Value: 4
+      Label: 1
+    Value: 2
+      Label: 1
+  Value: 1
+    Attribute: Food and drink
+    Value: 3
+      Label: 0
+    Value: 1
+      Attribute: Arrival Delay in Minutes
+      Value: 5
+        Label: 1
+      Value: 2
+        Attribute: Type of Travel
+        Value: 0
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 4
+        Label: 1
+      Value: 1
+        Label: 0
+      Value: 3
+        Label: 1
+    Value: 4
+      Label: 0
+    Value: 5
+      Label: 0
+    Value: 2
+      Label: 0
+  Value: 2
+    Attribute: Food and drink
+    Value: 3
+      Attribute: Inflight entertainment
+      Value: 4
+        Label: 0
+      Value: 5
+        Attribute: Arrival Delay in Minutes
+        Value: 3
+          Label: 0
+        Value: 5
+          Label: 0
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 2
+          Attribute: Age
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 1
+      Value: 1
+        Attribute: Gate location
+        Value: 3
+          Label: 0
+        Value: 2
+          Attribute: Type of Travel
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 1
+        Value: 5
+          Label: 0
+      Value: 3
+        Label: 0
+      Value: 2
+        Label: 0
+    Value: 2
+      Attribute: Inflight service
+      Value: 3
+        Attribute: Age
+        Value: 2
+          Label: 0
+        Value: 0
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 1
+          Label: 1
+      Value: 5
+        Attribute: Customer Type
+        Value: 1
+          Label: 1
+        Value: 0
+          Label: 0
+      Value: 2
+        Attribute: Age
+        Value: 2
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 3
+          Attribute: Seat comfort
+          Value: 2
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 1
+        Value: 1
+          Attribute: Gender
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 1
+      Value: 4
+        Attribute: Type of Travel
+        Value: 0
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 1
+        Label: 0
+    Value: 4
+      Label: 0
+    Value: 1
+      Label: 0
+    Value: 5
+      Label: 0
+  Value: 4
+    Attribute: Ease of Online booking
+    Value: 4
+      Attribute: Class
+      Value: 0
+        Attribute: Checkin service
+        Value: 3
+          Label: 1
+        Value: 4
+          Attribute: Departure/Arrival time convenient
+          Value: 0
+            Label: 1
+          Value: 1
+            Attribute: Leg room service
+            Value: 5
+              Attribute: Gender
+              Value: 1
+                Label: 0
+              Value: 0
+                Attribute: On-board service
+                Value: 2
+                  Label: 0
+                Value: 4
+                  Label: 1
+            Value: 4
+              Label: 1
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 1
+          Value: 2
+            Label: 1
+          Value: 3
+            Label: 1
+        Value: 5
+          Label: 1
+        Value: 2
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 1
+        Attribute: Checkin service
+        Value: 1
+          Label: 0
+        Value: 4
+          Attribute: Inflight entertainment
+          Value: 4
+            Attribute: Departure/Arrival time convenient
+            Value: 0
+              Attribute: Cleanliness
+              Value: 2
+                Label: 1
+              Value: 4
+                Label: 1
+              Value: 3
+                Label: 0
+            Value: 1
+              Label: 1
+            Value: 2
+              Label: 0
+          Value: 5
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 0
+        Value: 3
+          Label: 1
+        Value: 2
+          Label: 0
+        Value: 5
+          Label: 0
+      Value: 2
+        Attribute: Age
+        Value: 3
+          Label: 1
+        Value: 1
+          Label: 0
+    Value: 3
+      Attribute: Leg room service
+      Value: 2
+        Attribute: Cleanliness
+        Value: 2
+          Label: 0
+        Value: 5
+          Label: 1
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 0
+      Value: 3
+        Attribute: Inflight service
+        Value: 5
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 3
+          Label: 1
+      Value: 4
+        Attribute: Arrival Delay in Minutes
+        Value: 2
+          Attribute: Flight Distance
+          Value: 1
+            Label: 1
+          Value: 3
+            Label: 1
+          Value: 0
+            Label: 0
+        Value: 1
+          Attribute: Checkin service
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 1
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 0
+        Value: 3
+          Label: 0
+        Value: 4
+          Attribute: Gender
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 1
+        Value: 5
+          Label: 1
+      Value: 5
+        Label: 1
+      Value: 1
+        Label: 1
+    Value: 0
+      Attribute: Arrival Delay in Minutes
+      Value: 5
+        Label: 1
+      Value: 3
+        Label: 1
+      Value: 4
+        Label: 1
+      Value: 1
+        Label: 0
+    Value: 1
+      Attribute: Arrival Delay in Minutes
+      Value: 4
+        Attribute: Departure Delay in Minutes
+        Value: 3
+          Label: 0
+        Value: 2
+          Attribute: Class
+          Value: 1
+            Attribute: Type of Travel
+            Value: 1
+              Label: 0
+            Value: 0
+              Label: 1
+          Value: 0
+            Label: 0
+        Value: 4
+          Label: 0
+        Value: 1
+          Label: 0
+      Value: 3
+        Attribute: Age
+        Value: 3
+          Label: 0
+        Value: 4
+          Label: 1
+      Value: 1
+        Label: 1
+      Value: 5
+        Label: 0
+    Value: 5
+      Attribute: Inflight service
+      Value: 4
+        Attribute: Arrival Delay in Minutes
+        Value: 2
+          Label: 0
+        Value: 1
+          Attribute: Age
+          Value: 1
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 3
+            Label: 1
+        Value: 3
+          Attribute: Flight Distance
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 0
+          Value: 2
+            Label: 1
+          Value: 3
+            Label: 0
+        Value: 4
+          Attribute: Type of Travel
+          Value: 1
+            Label: 1
+          Value: 0
+            Label: 0
+        Value: 5
+          Label: 0
+      Value: 5
+        Label: 1
+      Value: 2
+        Label: 0
+      Value: 3
+        Label: 0
+    Value: 2
+      Attribute: Inflight entertainment
+      Value: 4
+        Attribute: Age
+        Value: 3
+          Label: 1
+        Value: 4
+          Label: 0
+        Value: 2
+          Label: 0
+      Value: 5
+        Attribute: Arrival Delay in Minutes
+        Value: 3
+          Label: 0
+        Value: 4
+          Label: 1
+        Value: 1
+          Label: 1
+        Value: 2
+          Label: 1
+      Value: 2
+        Attribute: Baggage handling
+        Value: 2
+          Label: 0
+        Value: 5
+          Label: 1
+        Value: 3
+          Label: 0
+        Value: 4
+          Label: 0
+      Value: 1
+        Attribute: Age
+        Value: 3
+          Label: 0
+        Value: 2
+          Label: 1
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 1
+      Value: 3
+        Attribute: Checkin service
+        Value: 1
+          Label: 1
+        Value: 2
+          Label: 0
+        Value: 4
+          Label: 1
+        Value: 3
+          Label: 1
+        Value: 5
+          Label: 1
+  Value: 0
+    Label: 1
+Value: 2
+  Attribute: Inflight wifi service
+  Value: 3
+    Attribute: Ease of Online booking
+    Value: 0
+      Label: 0
+    Value: 2
+      Attribute: Cleanliness
+      Value: 3
+        Attribute: Arrival Delay in Minutes
+        Value: 1
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 5
+          Label: 1
+        Value: 3
+          Label: 0
+      Value: 5
+        Attribute: Seat comfort
+        Value: 3
+          Label: 1
+        Value: 1
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 4
+          Label: 1
+      Value: 4
+        Label: 0
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 0
+    Value: 1
+      Attribute: Inflight service
+      Value: 3
+        Label: 0
+      Value: 2
+        Label: 0
+      Value: 4
+        Label: 0
+      Value: 1
+        Label: 1
+    Value: 4
+      Label: 0
+    Value: 3
+      Attribute: Class
+      Value: 0
+        Attribute: Departure Delay in Minutes
+        Value: 5
+          Label: 1
+        Value: 3
+          Label: 0
+        Value: 4
+          Label: 1
+        Value: 2
+          Label: 1
+        Value: 1
+          Attribute: Age
+          Value: 3
+            Label: 0
+          Value: 1
+            Label: 1
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 1
+    Value: 5
+      Label: 0
+  Value: 2
+    Attribute: Food and drink
+    Value: 4
+      Attribute: Gate location
+      Value: 2
+        Label: 0
+      Value: 5
+        Label: 0
+      Value: 4
+        Attribute: Arrival Delay in Minutes
+        Value: 3
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 2
+          Attribute: Inflight service
+          Value: 2
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 4
+            Label: 1
+        Value: 1
+          Attribute: Cleanliness
+          Value: 1
+            Label: 0
+          Value: 4
+            Label: 1
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 5
+            Label: 1
+        Value: 5
+          Label: 1
+      Value: 3
+        Label: 0
+      Value: 1
+        Label: 0
+    Value: 3
+      Attribute: Gate location
+      Value: 2
+        Attribute: Departure Delay in Minutes
+        Value: 5
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 1
+          Attribute: On-board service
+          Value: 5
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 1
+        Value: 2
+          Attribute: Inflight service
+          Value: 4
+            Label: 0
+          Value: 5
+            Attribute: Age
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 1
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 0
+      Value: 3
+        Attribute: Arrival Delay in Minutes
+        Value: 4
+          Attribute: Departure Delay in Minutes
+          Value: 3
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 5
+            Label: 1
+        Value: 3
+          Label: 0
+        Value: 2
+          Label: 0
+        Value: 1
+          Attribute: Inflight service
+          Value: 3
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 2
+            Attribute: Age
+            Value: 3
+              Label: 0
+            Value: 4
+              Label: 0
+            Value: 2
+              Label: 1
+        Value: 5
+          Label: 1
+      Value: 5
+        Attribute: On-board service
+        Value: 1
+          Label: 1
+        Value: 2
+          Label: 0
+        Value: 3
+          Label: 0
+      Value: 4
+        Label: 0
+      Value: 1
+        Label: 0
+      Value: 0
+        Label: 0
+    Value: 5
+      Attribute: Gate location
+      Value: 5
+        Attribute: Arrival Delay in Minutes
+        Value: 3
+          Label: 0
+        Value: 2
+          Attribute: Age
+          Value: 2
+            Attribute: Flight Distance
+            Value: 0
+              Label: 0
+            Value: 2
+              Label: 0
+            Value: 1
+              Label: 1
+          Value: 3
+            Label: 0
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 0
+          Value: 4
+            Label: 1
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 5
+          Label: 1
+      Value: 1
+        Label: 0
+      Value: 2
+        Label: 0
+      Value: 3
+        Label: 0
+      Value: 4
+        Attribute: Age
+        Value: 1
+          Label: 0
+        Value: 2
+          Label: 1
+    Value: 1
+      Attribute: Gate location
+      Value: 1
+        Attribute: Departure Delay in Minutes
+        Value: 2
+          Attribute: Inflight service
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 3
+            Attribute: Age
+            Value: 2
+              Label: 1
+            Value: 1
+              Label: 0
+          Value: 1
+            Label: 0
+        Value: 4
+          Label: 0
+        Value: 3
+          Attribute: Inflight service
+          Value: 1
+            Label: 0
+          Value: 3
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 5
+            Label: 1
+        Value: 1
+          Attribute: Gender
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 1
+        Value: 5
+          Label: 1
+      Value: 2
+        Attribute: Checkin service
+        Value: 5
+          Label: 0
+        Value: 2
+          Attribute: Flight Distance
+          Value: 0
+            Label: 0
+          Value: 1
+            Attribute: Customer Type
+            Value: 0
+              Attribute: Type of Travel
+              Value: 1
+                Label: 1
+              Value: 2
+                Label: 0
+            Value: 1
+              Label: 0
+          Value: 2
+            Label: 0
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 0
+      Value: 5
+        Label: 0
+      Value: 4
+        Label: 0
+      Value: 3
+        Label: 0
+      Value: 0
+        Label: 0
+    Value: 2
+      Attribute: Class
+      Value: 0
+        Attribute: Inflight service
+        Value: 5
+          Attribute: Customer Type
+          Value: 1
+            Attribute: Type of Travel
+            Value: 3
+              Label: 1
+            Value: 1
+              Label: 1
+            Value: 2
+              Label: 1
+            Value: 0
+              Label: 0
+          Value: 0
+            Attribute: Leg room service
+            Value: 2
+              Label: 0
+            Value: 5
+              Attribute: Gender
+              Value: 1
+                Attribute: Age
                 Value: 1
-                  Attribute: Gate location
+                  Attribute: Type of Travel
                   Value: 1
-                    Attribute: Food and drink
+                    Attribute: Flight Distance
                     Value: 1
                       Attribute: Departure/Arrival time convenient
                       Value: 1
-                        Label: 0
+                        Attribute: Ease of Online booking
+                        Value: 1
+                          Attribute: Gate location
+                          Value: 1
+                            Attribute: Seat comfort
+                            Value: 1
+                              Attribute: Inflight entertainment
+                              Value: 1
+                                Attribute: On-board service
+                                Value: 1
+                                  Attribute: Baggage handling
+                                  Value: 1
+                                    Attribute: Checkin service
+                                    Value: 1
+                                      Attribute: Cleanliness
+                                      Value: 1
+                                        Attribute: Departure Delay in Minutes
+                                        Value: 1
+                                          Attribute: Arrival Delay in Minutes
+                                          Value: 1
+                                            Label: 0
+            Value: 4
+              Label: 0
             Value: 3
-              Attribute: Inflight wifi service
-              Value: 1
-                Attribute: Ease of Online booking
-                Value: 1
-                  Attribute: Food and drink
-                  Value: 4
-                    Attribute: Departure/Arrival time convenient
-                    Value: 1
-                      Attribute: Gate location
-                      Value: 1
-                        Label: 1
-      Value: 0
-        Attribute: Class
-        Value: 0
-          Attribute: Flight Distance
-          Value: 0
-            Attribute: Gate location
-            Value: 1
-              Attribute: Departure/Arrival time convenient
-              Value: 1
-                Attribute: Inflight wifi service
-                Value: 0
-                  Attribute: Food and drink
-                  Value: 1
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Online boarding
-                      Value: 0
-                        Label: 0
+              Label: 0
+        Value: 4
+          Attribute: Departure Delay in Minutes
+          Value: 4
+            Attribute: Age
+            Value: 2
+              Label: 1
+            Value: 3
+              Label: 1
+            Value: 4
+              Label: 1
             Value: 0
-              Attribute: Online boarding
-              Value: 0
-                Attribute: Inflight wifi service
-                Value: 0
-                  Attribute: Food and drink
-                  Value: 4
-                    Attribute: Departure/Arrival time convenient
-                    Value: 0
-                      Attribute: Ease of Online booking
-                      Value: 0
-                        Label: 0
+              Label: 0
+          Value: 3
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 1
+            Label: 1
+        Value: 3
+          Attribute: Checkin service
+          Value: 1
+            Label: 0
+          Value: 2
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 3
+            Attribute: Gate location
+            Value: 0
+              Label: 0
+            Value: 5
+              Label: 0
+            Value: 3
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 4
+            Label: 0
+        Value: 2
+          Attribute: Departure Delay in Minutes
+          Value: 3
+            Attribute: Age
+            Value: 1
+              Label: 0
+            Value: 2
+              Label: 1
+          Value: 2
+            Label: 0
+          Value: 5
+            Label: 0
+          Value: 4
+            Label: 0
+          Value: 1
+            Label: 0
+        Value: 1
+          Label: 0
+      Value: 1
+        Attribute: Baggage handling
+        Value: 1
+          Label: 0
+        Value: 3
+          Label: 0
+        Value: 2
+          Attribute: Departure Delay in Minutes
+          Value: 4
+            Label: 0
+          Value: 5
+            Attribute: Cleanliness
+            Value: 2
+              Label: 0
+            Value: 5
+              Label: 0
+            Value: 4
+              Label: 0
+            Value: 3
+              Attribute: Age
               Value: 2
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Inflight wifi service
-                  Value: 0
-                    Attribute: Ease of Online booking
-                    Value: 0
-                      Attribute: Food and drink
-                      Value: 0
-                        Label: 0
-              Value: 1
-                Attribute: Departure/Arrival time convenient
-                Value: 1
-                  Attribute: Ease of Online booking
-                  Value: 1
-                    Attribute: Inflight wifi service
-                    Value: 0
-                      Attribute: Food and drink
-                      Value: 0
-                        Label: 0
+                Label: 1
+              Value: 3
+                Label: 0
+          Value: 1
+            Attribute: Cleanliness
+            Value: 1
+              Label: 0
+            Value: 3
+              Label: 1
+            Value: 4
+              Label: 0
+            Value: 5
+              Label: 1
+          Value: 2
+            Attribute: Age
+            Value: 2
+              Label: 0
+            Value: 1
+              Label: 0
+            Value: 3
+              Attribute: Arrival Delay in Minutes
+              Value: 4
+                Attribute: Inflight entertainment
+                Value: 2
+                  Label: 1
+                Value: 3
+                  Label: 0
+              Value: 2
+                Label: 0
+            Value: 4
+              Label: 0
+          Value: 3
+            Label: 0
+        Value: 5
+          Label: 0
+        Value: 4
+          Label: 0
+      Value: 2
+        Label: 0
+  Value: 1
+    Attribute: Ease of Online booking
+    Value: 2
+      Label: 0
+    Value: 4
+      Label: 0
+    Value: 1
+      Attribute: Cleanliness
+      Value: 4
+        Label: 1
+      Value: 1
+        Label: 0
+      Value: 3
+        Attribute: Age
+        Value: 1
+          Label: 0
+        Value: 4
+          Label: 0
+        Value: 2
+          Label: 1
+      Value: 5
+        Label: 1
+      Value: 2
+        Attribute: Type of Travel
+        Value: 0
+          Label: 1
+        Value: 1
+          Label: 0
+    Value: 5
+      Label: 0
+    Value: 3
+      Label: 0
+    Value: 0
+      Label: 0
+  Value: 5
+    Label: 1
+  Value: 4
+    Attribute: Food and drink
+    Value: 4
+      Attribute: Inflight entertainment
+      Value: 2
+        Label: 1
+      Value: 1
+        Attribute: Gender
+        Value: 1
+          Label: 1
+        Value: 0
+          Attribute: Departure/Arrival time convenient
+          Value: 2
+            Label: 0
+          Value: 3
+            Label: 1
+      Value: 4
+        Attribute: Age
+        Value: 2
+          Label: 1
+        Value: 4
+          Label: 0
+        Value: 3
+          Label: 1
+      Value: 3
+        Attribute: Baggage handling
+        Value: 5
+          Label: 1
+        Value: 3
+          Attribute: Gender
+          Value: 1
+            Label: 0
+          Value: 0
+            Label: 1
+        Value: 1
+          Label: 1
+        Value: 4
+          Label: 1
+      Value: 5
+        Attribute: Baggage handling
+        Value: 5
+          Label: 1
+        Value: 3
+          Label: 0
+        Value: 2
+          Label: 0
+    Value: 2
+      Attribute: Departure Delay in Minutes
+      Value: 1
+        Label: 1
+      Value: 3
+        Label: 0
+      Value: 5
+        Label: 0
+      Value: 4
+        Label: 0
+    Value: 1
+      Attribute: Leg room service
+      Value: 5
+        Label: 1
+      Value: 3
+        Label: 0
+      Value: 4
+        Attribute: Age
+        Value: 1
+          Label: 1
+        Value: 3
+          Label: 1
+        Value: 2
+          Label: 1
+        Value: 0
+          Label: 0
+      Value: 2
+        Label: 0
+      Value: 1
+        Label: 0
+    Value: 3
+      Attribute: Leg room service
+      Value: 4
+        Label: 0
+      Value: 2
+        Attribute: Age
+        Value: 0
+          Label: 0
+        Value: 3
+          Attribute: Gender
+          Value: 0
+            Label: 0
+          Value: 1
+            Label: 1
+        Value: 4
+          Label: 1
+        Value: 1
+          Label: 0
+      Value: 3
+        Label: 0
+      Value: 5
+        Attribute: Type of Travel
+        Value: 1
+          Attribute: On-board service
+          Value: 2
+            Label: 1
+          Value: 4
+            Label: 0
+        Value: 0
+          Label: 1
+    Value: 5
+      Attribute: Gender
+      Value: 1
+        Label: 1
+      Value: 0
+        Label: 0
+  Value: 0
+    Label: 1
+Value: 0
+  Attribute: Inflight wifi service
+  Value: 0
+    Label: 1
+  Value: 4
+    Attribute: Age
+    Value: 4
+      Label: 0
+    Value: 2
+      Label: 0
+    Value: 0
+      Label: 1
+    Value: 1
+      Label: 0
+    Value: 3
+      Label: 0
+  Value: 1
+    Label: 0
+  Value: 3
+    Label: 0
+  Value: 2
+    Label: 0
+  Value: 5
+    Label: 1
