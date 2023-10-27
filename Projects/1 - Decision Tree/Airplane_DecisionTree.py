@@ -38,28 +38,66 @@ Gender_Mapping = {
 }
 train["Gender"] = train["Gender"].replace(Gender_Mapping)
 
-conditions = [
-    train['Age'] <= 16,
-    (train['Age'] > 16) & (train['Age'] <= 32),
-    (train['Age'] > 32) & (train['Age'] <= 48),
-    (train['Age'] > 48) & (train['Age'] <= 64),
-    (train['Age'] > 64) & (train['Age'] <= 80),
-    train['Age'] > 80
-]
-choices = [0, 1, 2, 3, 4, 5]
-train['Age'] = np.select(conditions, choices, default=train['Age'])
+ # classify age 
+train.loc[train['Age'] <= 16  , 'Age']                          = 0 
+train.loc[ (train['Age'] > 16 ) & (train['Age'] <= 32 ) , 'Age'] = 1 
+train.loc[ (train['Age'] > 32 ) & (train['Age'] <= 48 ) , 'Age'] = 2 
+train.loc[ (train['Age'] > 48 ) & (train['Age'] <= 64 ) , 'Age'] = 3
+train.loc[ (train['Age'] > 64 ) & (train['Age'] <= 80 ) , 'Age'] = 4
+train.loc[ (train['Age'] > 80 ) , 'Age']                        = 5
 
-bins = [0, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900, 960, 1020, 1080, 1140, 1200, float('inf')]
-labels = list(range(len(bins) - 1))
-train['Arrival Delay in Minutes'] = pd.cut(train['Arrival Delay in Minutes'], bins=bins, labels=labels, include_lowest=True, right=False).fillna(0).astype(int)
+# classify Arrival Delay in Minutes
+train.loc[  train['Arrival Delay in Minutes'] <= 60.0  , 'Arrival Delay in Minutes']                                                 = 0 
+train.loc[ (train['Arrival Delay in Minutes'] > 60.0 ) & (train['Arrival Delay in Minutes'] <= 120.0 ) ,  'Arrival Delay in Minutes']   = 1 
+train.loc[ (train['Arrival Delay in Minutes'] > 120.0 ) & (train['Arrival Delay in Minutes'] <= 180.0 ) , 'Arrival Delay in Minutes']   = 2 
+train.loc[ (train['Arrival Delay in Minutes'] > 180.0 ) & (train['Arrival Delay in Minutes'] <= 240.0 ) , 'Arrival Delay in Minutes']   = 3
+train.loc[ (train['Arrival Delay in Minutes'] > 240.0 ) & (train['Arrival Delay in Minutes'] <= 300.0 ) , 'Arrival Delay in Minutes']   = 4
+train.loc[ (train['Arrival Delay in Minutes'] > 360.0 ) & (train['Arrival Delay in Minutes'] <= 420.0 ) , 'Arrival Delay in Minutes']   = 5
+train.loc[ (train['Arrival Delay in Minutes'] > 420.0 ) & (train['Arrival Delay in Minutes'] <= 480.0 ) , 'Arrival Delay in Minutes']   = 6
+train.loc[ (train['Arrival Delay in Minutes'] > 480.0 ) & (train['Arrival Delay in Minutes'] <= 540.0 ) , 'Arrival Delay in Minutes']   = 7
+train.loc[ (train['Arrival Delay in Minutes'] > 540.0 ) & (train['Arrival Delay in Minutes'] <= 600.0 ) , 'Arrival Delay in Minutes']   = 8
+train.loc[ (train['Arrival Delay in Minutes'] > 600.0 ) & (train['Arrival Delay in Minutes'] <= 660.0 ) , 'Arrival Delay in Minutes']   = 9
+train.loc[ (train['Arrival Delay in Minutes'] > 660.0 ) & (train['Arrival Delay in Minutes'] <= 720.0 ) , 'Arrival Delay in Minutes']   = 10
+train.loc[ (train['Arrival Delay in Minutes'] > 720.0 ) & (train['Arrival Delay in Minutes'] <= 780.0 ) , 'Arrival Delay in Minutes']   = 11
+train.loc[ (train['Arrival Delay in Minutes'] > 780.0 ) & (train['Arrival Delay in Minutes'] <= 840.0 ) , 'Arrival Delay in Minutes']   = 12
+train.loc[ (train['Arrival Delay in Minutes'] > 840.0 ) & (train['Arrival Delay in Minutes'] <= 900.0 ) , 'Arrival Delay in Minutes']   = 13
+train.loc[ (train['Arrival Delay in Minutes'] > 900.0 ) & (train['Arrival Delay in Minutes'] <= 960.0 ) , 'Arrival Delay in Minutes']   = 14
+train.loc[ (train['Arrival Delay in Minutes'] > 960.0 ) & (train['Arrival Delay in Minutes'] <= 1020.0 ) , 'Arrival Delay in Minutes']  = 20
+train.loc[ (train['Arrival Delay in Minutes'] > 1020.0 ) & (train['Arrival Delay in Minutes'] <= 1080.0 ) , 'Arrival Delay in Minutes'] = 21
+train.loc[ (train['Arrival Delay in Minutes'] > 1080.0 ) & (train['Arrival Delay in Minutes'] <= 1140.0 ) , 'Arrival Delay in Minutes'] = 22
+train.loc[ (train['Arrival Delay in Minutes'] > 1140.0 ) & (train['Arrival Delay in Minutes'] <= 1200.0 ) , 'Arrival Delay in Minutes'] = 23
+train.loc[ (train['Arrival Delay in Minutes'] > 1200.0 ) , 'Arrival Delay in Minutes']                                               = 24
+train['Arrival Delay in Minutes'] = train['Arrival Delay in Minutes'].fillna(0)
+# classify Departure Delay in Minutes
+train.loc[  train['Departure Delay in Minutes'] <= 60  , 'Departure Delay in Minutes']                                                       = 0 
+train.loc[ (train['Departure Delay in Minutes'] > 60 ) &   (train['Departure Delay in Minutes'] <= 120 ) ,  'Departure Delay in Minutes']   = 1 
+train.loc[ (train['Departure Delay in Minutes'] > 120 ) &  (train['Departure Delay in Minutes'] <= 180 ) ,  'Departure Delay in Minutes']   = 2 
+train.loc[ (train['Departure Delay in Minutes'] > 180 ) &  (train['Departure Delay in Minutes'] <= 240 ) ,  'Departure Delay in Minutes']   = 3
+train.loc[ (train['Departure Delay in Minutes'] > 240 ) &  (train['Departure Delay in Minutes'] <= 300 ) ,  'Departure Delay in Minutes']   = 4
+train.loc[ (train['Departure Delay in Minutes'] > 360 ) &  (train['Departure Delay in Minutes'] <= 420 ) ,  'Departure Delay in Minutes']   = 5
+train.loc[ (train['Departure Delay in Minutes'] > 420 ) &  (train['Departure Delay in Minutes'] <= 480 ) ,  'Departure Delay in Minutes']   = 6
+train.loc[ (train['Departure Delay in Minutes'] > 480 ) &  (train['Departure Delay in Minutes'] <= 540 ) ,  'Departure Delay in Minutes']   = 7
+train.loc[ (train['Departure Delay in Minutes'] > 540 ) &  (train['Departure Delay in Minutes'] <= 600 ) ,  'Departure Delay in Minutes']   = 8
+train.loc[ (train['Departure Delay in Minutes'] > 600 ) &  (train['Departure Delay in Minutes'] <= 660 ) ,  'Departure Delay in Minutes']   = 9
+train.loc[ (train['Departure Delay in Minutes'] > 660 ) &  (train['Departure Delay in Minutes'] <= 720 ) ,  'Departure Delay in Minutes']   = 10
+train.loc[ (train['Departure Delay in Minutes'] > 720 ) &  (train['Departure Delay in Minutes'] <= 780 ) ,  'Departure Delay in Minutes']   = 11
+train.loc[ (train['Departure Delay in Minutes'] > 780 ) &  (train['Departure Delay in Minutes'] <= 840 ) ,  'Departure Delay in Minutes']   = 12
+train.loc[ (train['Departure Delay in Minutes'] > 840 ) &  (train['Departure Delay in Minutes'] <= 900 ) ,  'Departure Delay in Minutes']   = 13
+train.loc[ (train['Departure Delay in Minutes'] > 900 ) &  (train['Departure Delay in Minutes'] <= 960 ) ,  'Departure Delay in Minutes']   = 14
+train.loc[ (train['Departure Delay in Minutes'] > 960 ) &  (train['Departure Delay in Minutes'] <= 1020 ) , 'Departure Delay in Minutes']   = 20
+train.loc[ (train['Departure Delay in Minutes'] > 1020 ) & (train['Departure Delay in Minutes'] <= 1080 ) , 'Departure Delay in Minutes']   = 21
+train.loc[ (train['Departure Delay in Minutes'] > 1080 ) & (train['Departure Delay in Minutes'] <= 1140 ) , 'Departure Delay in Minutes']   = 22
+train.loc[ (train['Departure Delay in Minutes'] > 1140 ) & (train['Departure Delay in Minutes'] <= 1200 ) , 'Departure Delay in Minutes']   = 23
+train.loc[ (train['Departure Delay in Minutes'] > 1200 ) & (train['Departure Delay in Minutes'] <= 1260 ), 'Departure Delay in Minutes']    = 24
+train.loc[ (train['Departure Delay in Minutes'] > 1260 ) , 'Departure Delay in Minutes']                                                   = 25
 
-bins = [0, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900, 960, 1020, 1080, 1140, 1200, 1260, float('inf')]
-labels = list(range(len(bins) - 1))
-train['Departure Delay in Minutes'] = pd.cut(train['Departure Delay in Minutes'], bins=bins, labels=labels, include_lowest=True, right=False).fillna(0).astype(int)
+# classify Flight Distance
 
-bins = [0, 1000, 2000, 3000, 4000, float('inf')]
-labels = list(range(len(bins) - 1))
-train['Flight Distance'] = pd.cut(train['Flight Distance'], bins=bins, labels=labels, include_lowest=True, right=False).fillna(0).astype(int)
+train.loc[ (train['Flight Distance'] <= 1000 ) ,  'Flight Distance']                                      = 0
+train.loc[ (train['Flight Distance'] > 1000 ) & (train['Flight Distance'] <= 2000 ) ,  'Flight Distance']  = 1
+train.loc[ (train['Flight Distance'] > 2000 ) &  (train['Flight Distance'] <= 3000 ) , 'Flight Distance']  = 2
+train.loc[ (train['Flight Distance'] > 3000 ) & (train['Flight Distance'] <= 4000 ) , 'Flight Distance']   = 3
+train.loc[ (train['Flight Distance'] > 4000 ) , 'Flight Distance']  
 
 attributes = train.columns
 
