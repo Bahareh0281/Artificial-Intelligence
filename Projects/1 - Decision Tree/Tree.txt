@@ -1,0 +1,1 @@
+Attribute:Online boardingValue:3  Attribute:Inflight wifi service  Value:3    Attribute:Class    Value:1      Attribute:Food and drink      Value:3ce      Value:0        Attribute:Arrival Delay in Minutes        Value:4          Attribute:Leg room service          Value:4            Attribute:Inflight service            Value:5
