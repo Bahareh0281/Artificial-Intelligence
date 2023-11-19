@@ -1,0 +1,167 @@
+Microsoft Windows [Version 10.0.22621.2428]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>code .
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>code .
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>dir
+ Volume in drive D is Local Disk
+ Volume Serial Number is AE17-2389
+
+ Directory of D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree
+
+10/24/2023  05:19 PM    <DIR>          .
+10/23/2023  12:51 PM    <DIR>          ..
+10/23/2023  12:45 PM        12,193,089 Airplane.csv
+10/23/2023  12:45 PM           404,318 Decision Tree Project.pdf
+10/25/2023  06:06 AM             1,300 DecisionTree.ipynb
+10/23/2023  01:59 PM               625 Restaurant.csv
+               4 File(s)     12,599,332 bytes
+               2 Dir(s)  10,600,894,464 bytes free
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>where python
+C:\Python311\python.exe
+C:\Users\KavousiNejad\AppData\Local\Microsoft\WindowsApps\python.exe
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>where python3.10
+INFO: Could not find files for the given pattern(s).
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>python -m env venv
+C:\Python311\python.exe: No module named env
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>python -m venv venv
+
+D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>venv\Scripts\activate
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>dir
+ Volume in drive D is Local Disk
+ Volume Serial Number is AE17-2389
+
+ Directory of D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree
+
+10/25/2023  06:09 AM    <DIR>          .
+10/23/2023  12:51 PM    <DIR>          ..
+10/23/2023  12:45 PM        12,193,089 Airplane.csv
+10/23/2023  12:45 PM           404,318 Decision Tree Project.pdf
+10/25/2023  06:06 AM             1,300 DecisionTree.ipynb
+10/23/2023  01:59 PM               625 Restaurant.csv
+10/25/2023  06:09 AM    <DIR>          venv
+               4 File(s)     12,599,332 bytes
+               3 Dir(s)  10,573,692,928 bytes free
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pip freeze
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pip install pandas
+Collecting pandas
+  Using cached pandas-2.1.1-cp311-cp311-win_amd64.whl (10.6 MB)
+Collecting numpy>=1.23.2
+  Using cached numpy-1.26.1-cp311-cp311-win_amd64.whl (15.8 MB)
+Collecting python-dateutil>=2.8.2
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2020.1
+  Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 kB 1.0 MB/s eta 0:00:00
+Collecting tzdata>=2022.1
+  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, six, numpy, python-dateutil, pandas
+Successfully installed numpy-1.26.1 pandas-2.1.1 python-dateutil-2.8.2 pytz-2023.3.post1 six-1.16.0 tzdata-2023.3
+
+[notice] A new release of pip available: 22.3 -> 23.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pandas -v
+'pandas' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pandas --version
+'pandas' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pip freeze
+numpy==1.26.1
+pandas==2.1.1
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tzdata==2023.3
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pip install numpy
+Requirement already satisfied: numpy in d:\bahareh\7\files\artificial intelligence\git\artificial-intelligence\projects\1 - decision tree\venv\lib\site-packages (1.26.1)
+
+[notice] A new release of pip available: 22.3 -> 23.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>pip install ipykernel
+Collecting ipykernel
+  Downloading ipykernel-6.26.0-py3-none-any.whl (114 kB)
+     ━━━━━━━━━━━ 114.3/114.3 350.2 kB/s eta 0:00:00                 kB
+Collecting comm>=0.1.1
+  Using cached comm-0.1.4-py3-none-any.whl (6.6 kB)Collecting debugpy>=1.6.5
+  Using cached debugpy-1.8.0-cp311-cp311-win_amd64.whl (4.9 MB)
+Collecting ipython>=7.23.1
+  Using cached ipython-8.16.1-py3-none-any.whl (806 kB)
+Collecting jupyter-client>=6.1.12
+  Downloading jupyter_client-8.5.0-py3-none-any.whl (105 kB)
+     ━━━━━━━━━━━━ 105.7/105.7  1.0 MB/s eta 0:00:00                  kB
+Collecting jupyter-core!=5.0.*,>=4.12
+  Using cached jupyter_core-5.4.0-py3-none-any.whl (28 kB)
+Collecting matplotlib-inline>=0.1
+  Using cached matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting nest-asyncio
+  Using cached nest_asyncio-1.5.8-py3-none-any.whl (5.3 kB)
+Collecting packaging
+  Using cached packaging-23.2-py3-none-any.whl (53 kB)
+Collecting psutil
+  Using cached psutil-5.9.6-cp37-abi3-win_amd64.whl (252 kB)
+Collecting pyzmq>=20
+  Using cached pyzmq-25.1.1-cp311-cp311-win_amd64.whl (1.2 MB)
+Collecting tornado>=6.1
+  Using cached tornado-6.3.3-cp38-abi3-win_amd64.whl (429 kB)
+Collecting traitlets>=5.4.0
+  Downloading traitlets-5.12.0-py3-none-any.whl (84 kB)
+     ━━━━━━━━━━━━ 84.0/84.0 kB 1.6 MB/s eta 0:00:00Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting decorator
+  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting jedi>=0.16
+  Using cached jedi-0.19.1-py2.py3-none-any.whl (1.6 MB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30
+  Using cached prompt_toolkit-3.0.39-py3-none-any.whl (385 kB)
+Collecting pygments>=2.4.0
+  Using cached Pygments-2.16.1-py3-none-any.whl (1.2 MB)
+Collecting stack-data
+  Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+Collecting colorama
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in d:\bahareh\7\files\artificial intelligence\git\artificial-intelligence\projects\1 - decision tree\venv\lib\site-packages (from jupyter-client>=6.1.12->ipykernel) (2.8.2)
+Collecting platformdirs>=2.5
+  Using cached platformdirs-3.11.0-py3-none-any.whl (17 kB)
+Collecting pywin32>=300
+  Using cached pywin32-306-cp311-cp311-win_amd64.whl (9.2 MB)
+Collecting parso<0.9.0,>=0.8.3
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.8-py2.py3-none-any.whl (31 kB)
+Requirement already satisfied: six>=1.5 in d:\bahareh\7\files\artificial intelligence\git\artificial-intelligence\projects\1 - decision tree\venv\lib\site-packages (from python-dateutil>=2.8.2->jupyter-client>=6.1.12->ipykernel) (1.16.0)
+Collecting executing>=1.2.0
+  Using cached executing-2.0.0-py2.py3-none-any.whl (24 kB)
+Collecting asttokens>=2.1.0
+  Using cached asttokens-2.4.0-py2.py3-none-any.whl (27 kB)
+Collecting pure-eval
+  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Installing collected packages: wcwidth, pywin32, pure-eval, pickleshare, executing, backcall, traitlets, tornado, pyzmq, pygments, psutil, prompt-toolkit, platformdirs, parso, packaging, nest-asyncio, decorator, debugpy, colorama, asttokens, stack-data, matplotlib-inline, jupyter-core, jedi, comm, jupyter-client, ipython, ipykernel
+Successfully installed asttokens-2.4.0 backcall-0.2.0 colorama-0.4.6 comm-0.1.4 debugpy-1.8.0 decorator-5.1.1 executing-2.0.0 ipykernel-6.26.0 ipython-8.16.1 jedi-0.19.1 jupyter-client-8.5.0 jupyter-core-5.4.0 matplotlib-inline-0.1.6 nest-asyncio-1.5.8 packaging-23.2 parso-0.8.3 pickleshare-0.7.5 platformdirs-3.11.0 prompt-toolkit-3.0.39 psutil-5.9.6 pure-eval-0.2.2 pygments-2.16.1 pywin32-306 pyzmq-25.1.1 stack-data-0.6.3 tornado-6.3.3 traitlets-5.12.0 wcwidth-0.2.8
+
+[notice] A new release of pip available: 22.3 -> 23.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>
+(venv) D:\Bahareh\7\Files\Artificial Intelligence\Git\Artificial-Intelligence\Projects\1 - Decision Tree>
