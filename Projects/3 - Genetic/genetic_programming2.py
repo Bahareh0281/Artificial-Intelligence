@@ -136,10 +136,11 @@ def select_parents(population, input_data, target_outputs, available_variables):
     parents = random.choices(population, probabilities, k=2)
     return parents
 
-def genetic_programming(input_data, target_outputs, available_operators, available_variables, population_size=100, max_generations=100, max_depth=5):
+def genetic_programming(input_data, target_outputs, available_operators, available_variables, population_size=100, max_generations=100, max_depth=5, unchanged_threshold=10):
     population = [create_random_individual(max_depth, available_operators, available_variables) for _ in range(population_size)]
     best_individual = None
     best_fitness = float('inf')
+    unchanged_iterations = 0
 
     for generation in range(max_generations):
         new_population = []
@@ -157,9 +158,16 @@ def genetic_programming(input_data, target_outputs, available_operators, availab
             if fitness < best_fitness:
                 best_individual = individual
                 best_fitness = fitness
+                unchanged_iterations = 0
+            else:
+                unchanged_iterations += 1
 
         if best_fitness == 0:
             break
+
+        if unchanged_iterations >= unchanged_threshold:
+            best_individual = mutation(best_individual, max_depth, available_operators, available_variables)
+            unchanged_iterations = 0
 
     return best_individual
 
