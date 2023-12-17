@@ -170,11 +170,32 @@ def generate_inputs(num_inputs):
         inputs.append((x,))
     return inputs
 
+def generate2D_inputs(num_inputs):
+    inputs = []
+    for _ in range(num_inputs):
+        x = random.uniform(-10, 10)
+        y = random.uniform(-10, 10)
+        inputs.append((x, y))
+    return inputs
+
 # Example usage:
 # input_data = [(1,), (2,), (3,), (4,)]
 # target_outputs = [3, 5, 7, 9]
-input_data = generate_inputs(100)  # Generate 100 input data points
-target_outputs = [3 * x[0] + 1 for x in input_data]  # Define target outputs for the inputs
+
+# Part 1
+# input_data = generate_inputs(100)  # Generate 100 input data points
+# target_outputs = [math.atan(x[0]) + 5 for x in input_data]  # Define target outputs for the inputs
+# available_variables = ['x']
+
+# Part 2
+# input_data = generate_inputs(500)  # Generate 500 input data points
+# target_outputs = [(x[0]/5 + 1) if x[0] > 0 else (x[0] ** 3 + 5) for x in input_data]  # Define target outputs for the inputs
+# available_variables = ['x']
+
+# Part 4
+input_data = generate2D_inputs(500)  # Generate 500 input data points
+target_outputs = [2 * x[0] + 3 * x[1] for x in input_data]  # Define target outputs for the inputs
+available_variables = ['x', 'y']
 
 available_operators = [
     {'symbol': '+', 'arity': 2},
@@ -185,7 +206,7 @@ available_operators = [
     {'symbol': 'sin', 'arity': 1},
     {'symbol': 'cos', 'arity': 1}
 ]
-available_variables = ['x']
+
 
 best_function = genetic_programming(input_data, target_outputs, available_operators, available_variables)
 print("Best function:", best_function.print_function())
