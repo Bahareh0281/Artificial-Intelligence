@@ -10,6 +10,7 @@ Original file is located at
 import matplotlib.pyplot as plt
 import random
 import math
+import numpy as np
 
 class Node:
     def __init__(self, type=None, value=None):
@@ -110,25 +111,14 @@ def mutation(individual, max_depth, available_operators, available_variables):
     return individual
 
 def evaluate_fitness(individual, input_data, target_outputs, available_variables):
-    """Evaluate the fitness of an individual.
-
-    Args:
-        individual: The individual to evaluate.
-        input_data: A list of input data.
-        target_outputs: A list of target outputs.
-        available_variables: A list of available variables.
-
-    Returns:
-        The fitness of the individual.
-    """
-
     total_error = 0
     for input_values, target_output in zip(input_data, target_outputs):
         output = individual.evaluate(input_values, available_variables)
         if output is not None:
-            error = abs(output - target_output)
-            total_error += error
-    return total_error
+            error = output - target_output
+            total_error += error ** 2
+    mse = total_error / len(input_data)
+    return mse
 
 def select_parents(population, input_data, target_outputs, available_variables):
     fitness_scores = [evaluate_fitness(individual, input_data, target_outputs, available_variables) for individual in population]
@@ -137,18 +127,13 @@ def select_parents(population, input_data, target_outputs, available_variables):
     parents = random.choices(population, probabilities, k=2)
     return parents
 
-def calculate_mse(individual, input_data, target_outputs, available_variables):
-    predictions = individual.evaluate(input_data, available_variables)
-    mse = np.mean((predictions - target_outputs) ** 2)
-    return mse
-
 def genetic_programming(input_data, target_outputs, available_operators, available_variables, population_size=100, max_generations=100, max_depth=5, unchanged_threshold=10):
     population = [create_random_individual(max_depth, available_operators, available_variables) for _ in range(population_size)]
     best_individual = None
     best_fitness = float('inf')
     unchanged_iterations = 0
     best_fitness_history = []  # Store the best fitness value for each generation
-
+    mse_history = []
     for generation in range(max_generations):
         new_population = []
 
@@ -169,7 +154,8 @@ def genetic_programming(input_data, target_outputs, available_operators, availab
             else:
                 unchanged_iterations += 1
 
-        best_fitness_history.append(best_fitness)  # Store the best fitness value for the current generation
+        best_fitness_history.append(best_fitness)  # Store the best MSE value for the current generation
+        mse_history.append(best_fitness)  # Store the MSE value for the current generation
 
         if best_fitness == 0:
             break
@@ -178,22 +164,15 @@ def genetic_programming(input_data, target_outputs, available_operators, availab
             best_individual = mutation(best_individual, max_depth, available_operators, available_variables)
             unchanged_iterations = 0
 
-    plot_fitness_history(best_fitness_history)
+    plot_fitness_history(mse_history)
 
     return best_individual
 
-def plot_fitness_history(fitness_history):
-    plt.plot(fitness_history)
-    plt.xlabel('Generation')
-    plt.ylabel('Best Fitness')
-    plt.title('Genetic Programming Progress')
-    plt.show()
-
-def plot_mse_history(mse_history):
+def plot_fitness_history(mse_history):
     plt.plot(mse_history)
     plt.xlabel('Generation')
-    plt.ylabel('Mean Squared Error (MSE)')
-    plt.title('MSE Change over Generations')
+    plt.ylabel('Mean Squared Error')
+    plt.title('Genetic Programming Progress')
     plt.show()
 
 def generate_inputs(num_inputs):
@@ -226,7 +205,7 @@ available_variables = ['x']
 # available_variables = ['x']
 
 # Part 4
-input_data = generate2D_inputs(500)  # Generate 500 input data points
+# input_data = generate2D_inputs(500)  # Generate 500 input data points
 # target_outputs = [2 * x[0] + 3 * x[1] for x in input_data]  # Define target outputs for the inputs
 # available_variables = ['x', 'y']
 
