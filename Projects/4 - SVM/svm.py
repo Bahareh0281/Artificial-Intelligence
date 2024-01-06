@@ -52,6 +52,21 @@ def makePoints2(dataset):
           Y.append(0)
   return Y
 
+def is_the_point_in_circle(ix , xceneter , ycenter , radious ) :
+    rtmp = ( ix[0] - xceneter )**2 + ( ix[1]-ycenter)**2
+    if( rtmp <= radious**2 ) :
+        return True
+    return False
+
+def turn_points_2Circles( X  ,radious , xceneter , ycenter ) :
+    Y = []
+    for ix in X:
+        if( is_the_point_in_circle(ix , xceneter , ycenter , radious ) or is_the_point_in_circle(ix , xceneter+3 , ycenter+4 , radious-0.5 ) ) :
+           Y.append(0)
+        else:
+            Y.append(1)
+    return Y
+
 def ClassifiyedPoints(X, Y):
     x0 = []
     x1 = []
@@ -154,6 +169,76 @@ size = 500
 while o == -1:
     dataset = generate_random_dataset(size)
     label = makePoints2(dataset)
+    dataset = np.array(dataset)
+    X_train, X_test, Y_train, Y_test = train_test_split(dataset, label, test_size=0.2, random_state=42)
+    x0_vals, x1_vals = ClassifiyedPoints(X_train, Y_train)
+
+    if x0_vals == 0 or x1_vals == 0:
+        o = -1
+    else:
+        o = 0
+
+
+# Instantiate the classifier
+clf1 = SVC(kernel='linear')
+clf2 = SVC(kernel='rbf')
+clf3 = SVC(kernel='sigmoid')
+clf4 = SVC(kernel='poly', gamma="auto")
+
+# Fit the classifier on the training data
+clf1.fit(X_train, Y_train)
+clf2.fit(X_train, Y_train)
+clf3.fit(X_train, Y_train)
+clf4.fit(X_train, Y_train)
+
+# Predictions and Accuracy
+predictions = clf1.predict( X_test )
+accuracy = accuracy_score(Y_test, predictions)
+print( "linear kernel accuracy : " , accuracy )
+predictions = clf2.predict( X_test )
+accuracy = accuracy_score(Y_test, predictions)
+print( "rbf kernel accuracy : " , accuracy )
+predictions = clf3.predict( X_test )
+accuracy = accuracy_score(Y_test, predictions)
+print( "sigmoid kernel accuracy : " , accuracy )
+predictions = clf4.predict( X_test )
+accuracy = accuracy_score(Y_test, predictions)
+print( "poly kernel accuracy : " , accuracy )
+
+# Adjust figsize as needed
+fig, axs = plt.subplots(1, 4, figsize=(10, 4))
+
+# Plot decision boundary
+plot_decision_boundary(axs[0], lambda X_test: clf1.predict(X_test), X_test, Y_test)
+axs[0].set_title('linear')
+
+
+plot_decision_boundary(axs[1], lambda X_test: clf2.predict(X_test), X_test, Y_test)
+axs[1].set_title('rbf')
+
+plot_decision_boundary(axs[2], lambda X_test: clf3.predict(X_test), X_test, Y_test)
+axs[2].set_title('sigmoid')
+
+
+plot_decision_boundary(axs[3], lambda X_test: clf4.predict(X_test), X_test, Y_test)
+axs[3].set_title('poly')
+
+plt.tight_layout()
+
+plt.show()
+
+X_train = []
+X_test = []
+Y_train = []
+Y_test = []
+x0_vals = []
+x1_vals = []
+o = -1
+
+size = 500
+while o == -1:
+    dataset = generate_random_dataset(size)
+    label = turn_points_2Circles(dataset , 2.5 , 4 , 10 )
     dataset = np.array(dataset)
     X_train, X_test, Y_train, Y_test = train_test_split(dataset, label, test_size=0.2, random_state=42)
     x0_vals, x1_vals = ClassifiyedPoints(X_train, Y_train)
