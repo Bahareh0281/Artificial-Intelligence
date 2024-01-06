@@ -238,7 +238,7 @@ o = -1
 size = 500
 while o == -1:
     dataset = generate_random_dataset(size)
-    label = turn_points_2Circles(dataset , 2.5 , 4 , 10 )
+    label = turn_points_2Circles(dataset, 5, 4, 10)
     dataset = np.array(dataset)
     X_train, X_test, Y_train, Y_test = train_test_split(dataset, label, test_size=0.2, random_state=42)
     x0_vals, x1_vals = ClassifiyedPoints(X_train, Y_train)
