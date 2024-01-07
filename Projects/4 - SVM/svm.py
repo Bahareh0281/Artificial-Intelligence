@@ -13,6 +13,8 @@ import random
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
+from sklearn import svm
+from sklearn.datasets import make_blobs
 
 def generate_random_dataset(size):
     X = []
@@ -296,3 +298,101 @@ axs[3].set_title('poly')
 plt.tight_layout()
 
 plt.show()
+
+def generate_data(num_samples, seed):
+    X, y = make_blobs(
+        n_samples=num_samples, n_features=2, centers=2, random_state=seed
+    )
+    return X, y
+
+def train_svm_model(C, X, y):
+    model = svm.SVC(kernel='linear', C=C)
+    model.fit(X, y)
+    return model
+
+def plot_data(X, y):
+    plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='cool')
+
+def plot_decision_boundary(model):
+    ax = plt.gca()
+    xlim = ax.get_xlim()
+    ylim = ax.get_ylim()
+    xx = np.linspace(xlim[0], xlim[1], 30)
+    yy = np.linspace(ylim[0], ylim[1], 30)
+    YY, XX = np.meshgrid(yy, xx)
+    xy = np.vstack([XX.ravel(), YY.ravel()]).T
+    Z = model.decision_function(xy).reshape(XX.shape)
+    plt.contour(XX, YY, Z, colors='k', levels=[-1, 0, 1], alpha=0.5, linestyles=['--', '-', '--'])
+
+def plot_support_vectors(model):
+    plt.scatter(model.support_vectors_[:, 0], model.support_vectors_[:, 1], s=100, linewidth=1, facecolors='none', edgecolors='k')
+
+def plot_svm_result(C, X, y):
+    model = train_svm_model(C, X, y)
+    plot_data(X, y)
+    plot_decision_boundary(model)
+    plot_support_vectors(model)
+    plt.xlabel("Feature 1", fontsize=18)
+    plt.ylabel("Feature 2", fontsize=18)
+    plt.title("C = " + str(C) + " Score:" + str(model.score(X, y)), fontsize=18)
+
+
+X, y = generate_data(num_samples=200, seed=10)
+
+plt.figure(figsize=(10, 6))
+for i, C in enumerate([0.1, 1, 10, 100]):
+    plt.subplot(2, 2, i + 1)
+    plot_svm_result(C, X, y)
+
+plt.tight_layout()
+plt.show()
+
+from sklearn.model_selection import GridSearchCV
+
+def generate_linearly_separable_data(num_samples=100, seed=None):
+    """
+    Generate linearly separable data with two features (x1 and x2) for two classes (0 and 1).
+
+    Parameters:
+    - num_samples: Number of samples for each class.
+    - seed: Seed for random number generation for reproducibility.
+
+    Returns:
+    - X: NumPy array containing features (x1 and x2).
+    - y: NumPy array containing class labels (0 or 1).
+    """
+    if seed is not None:
+        np.random.seed(seed)
+    # Generate random coefficients for the linear equation separating the classes
+    coef_x1, coef_x2 = np.random.randn(2)
+    # Generate random points for class 0
+    X0 = np.random.rand(num_samples, 2)
+    y0 = np.zeros(num_samples)
+    # Generate random points for class 1, ensuring linear separability
+    X1 = np.random.rand(num_samples, 2)
+    X1[:, 1] = coef_x1 * X1[:, 0] + coef_x2 + np.random.randn(num_samples) * 0.1
+    y1 = np.ones(num_samples)
+    # Combine the points for both classes
+    X = np.vstack([X0, X1])
+    y = np.concatenate([y0, y1])
+    return X, y
+
+X, y = generate_linearly_separable_data(num_samples=50, seed=42)
+X_train, X_test, Y_train, Y_test = train_test_split(X,y, test_size=0.2, random_state=42)
+
+def calculate_best_params(grid):
+    clf  = svm.SVC()
+    svm_cv = GridSearchCV(clf, grid, cv = 3)
+    svm_cv.fit(X_train,Y_train)
+    print("Best Parameters:",svm_cv.best_params_)
+    print("Train Score:",svm_cv.best_score_)
+    print("Test Score:",svm_cv.score(X_test,Y_test))
+
+grid = {
+    'C':[0.01,0.1,1,10],
+    'kernel' : ["linear","poly","rbf"],
+    'degree' : [3,5,7],
+    'gamma' : [0.01,1,10,500]
+}
+
+calculate_best_params(grid)
