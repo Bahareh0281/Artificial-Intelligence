@@ -2,17 +2,6 @@ from othello_game import OthelloGame
 
 
 def get_best_move(game, max_depth=8):
-    """
-    Given the current game state, this function returns the best move for the AI player using the Alpha-Beta Pruning
-    algorithm with a specified maximum search depth.
-
-    Parameters:
-        game (OthelloGame): The current game state.
-        max_depth (int): The maximum search depth for the Alpha-Beta algorithm.
-
-    Returns:
-        tuple: A tuple containing the evaluation value of the best move and the corresponding move (row, col).
-    """
     _, best_move = alphabeta(game, max_depth)
     return best_move
 
@@ -20,19 +9,6 @@ def get_best_move(game, max_depth=8):
 def alphabeta(
     game, max_depth, maximizing_player=True, alpha=float("-inf"), beta=float("inf")
 ):
-    """
-    Alpha-Beta Pruning algorithm for selecting the best move for the AI player.
-
-    Parameters:
-        game (OthelloGame): The current game state.
-        max_depth (int): The maximum search depth for the Alpha-Beta algorithm.
-        maximizing_player (bool): True if maximizing player (AI), False if minimizing player (opponent).
-        alpha (float): The alpha value for pruning. Defaults to negative infinity.
-        beta (float): The beta value for pruning. Defaults to positive infinity.
-
-    Returns:
-        tuple: A tuple containing the evaluation value of the best move and the corresponding move (row, col).
-    """
     if max_depth == 0 or game.is_game_over():
         return evaluate_game_state(game), None
 
@@ -83,15 +59,6 @@ def alphabeta(
 
 
 def evaluate_game_state(game):
-    """
-    Evaluates the current game state for the AI player.
-
-    Parameters:
-        game (OthelloGame): The current game state.
-
-    Returns:
-        float: The evaluation value representing the desirability of the game state for the AI player.
-    """
     # Evaluation weights for different factors
     coin_parity_weight = 1.0
     mobility_weight = 2.0
@@ -137,16 +104,6 @@ def evaluate_game_state(game):
 
 
 def calculate_stability(game):
-    """
-    Calculates the stability of the AI player's disks on the board.
-
-    Parameters:
-        game (OthelloGame): The current game state.
-
-    Returns:
-        int: The number of stable disks for the AI player.
-    """
-
     def neighbors(row, col):
         return [
             (row + dr, col + dc)
