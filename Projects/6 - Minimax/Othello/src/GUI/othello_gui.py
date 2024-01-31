@@ -9,7 +9,7 @@ BOARD_SIZE = 8
 SQUARE_SIZE = (HEIGHT - 80) // BOARD_SIZE
 BLACK_COLOR = (0, 0, 0)
 WHITE_COLOR = (255, 255, 255)
-GREEN_COLOR = (0, 128, 0)
+GREEN_BLUE_COLOR = (0, 100, 200)
 
 
 class OthelloGUI:
@@ -45,7 +45,7 @@ class OthelloGUI:
         """
         Draw the Othello game board and messaging area on the window.
         """
-        self.win.fill(GREEN_COLOR)
+        self.win.fill(GREEN_BLUE_COLOR)
 
         # Draw board grid and disks
         for row in range(BOARD_SIZE):
